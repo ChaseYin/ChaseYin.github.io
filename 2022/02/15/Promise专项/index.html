@@ -1,0 +1,660 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/tiger.png">
+  <link rel="icon" href="/img/tiger.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="Chase Yin">
+  <meta name="keywords" content="">
+  
+  <title>Promise专项 - 阴晓峰的博客</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.9-a","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>阴晓峰的博客</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('https://i.loli.net/2021/04/26/45lTX7CAYJPZKH8.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="Promise专项">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-02-15 22:18" pubdate>
+        2022年2月15日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      23
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Promise专项</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2022年2月28日 下午
+                
+              </p>
+            
+            <div class="markdown-body">
+              <h3 id="Promise的介绍与基本使用"><a href="#Promise的介绍与基本使用" class="headerlink" title="Promise的介绍与基本使用"></a>Promise的介绍与基本使用</h3><ul>
+<li><p>理解（ES6新引进的异步编程解决方案）</p>
+<ul>
+<li>抽象表达：<ul>
+<li>Promise是一门新的技术（ES6规范）</li>
+<li>Promise是JS中进行<strong>异步编程</strong>的新解决方案（旧方案是使用简单的回调函数）</li>
+</ul>
+</li>
+<li>具象表达：<ul>
+<li>从语法上说：Promise是一个<strong>构造函数</strong>，可以<strong>进行对象的实例化</strong></li>
+<li>从功能上说：Promise对象用来<strong>封装一个异步操作</strong>并可以<strong>获取其成功/失败的结果值</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>异步操作包括但不限于：</p>
+<ul>
+<li>fs文件操作：可以对计算机的磁盘进行读写操作<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;fs&#x27;</span>).readFile(<span class="hljs-string">&#x27;./index.html&#x27;</span>,<span class="hljs-function"><span class="hljs-params">(err,data)</span>=&gt;</span>&#123;&#125;)<br></code></pre></td></tr></table></figure></li>
+<li>数据库操作：MongoDB，MySQL</li>
+<li>AJAX<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript">$.get(<span class="hljs-string">&#x27;/server&#x27;</span>,<span class="hljs-function"><span class="hljs-params">(data)</span>=&gt;</span>&#123;&#125;)<br></code></pre></td></tr></table></figure></li>
+<li>定时器<figure class="highlight coffeescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs coffeescript"><span class="hljs-built_in">setTimeout</span>(<span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span>&#123;&#125;,<span class="hljs-number">2000</span>)<br></code></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>使用Promise的优势</p>
+<ul>
+<li>指定回调函数的方式更加灵活：<ul>
+<li>旧的：回调函数必须在启动异步任务前指定</li>
+<li>Promise：启动异步任务 =&gt; 返回Promise对象 =&gt; 给Promise对象绑定回调函数（甚至可以在异步任务结束后指定多个回调函数）</li>
+</ul>
+</li>
+<li>支持链式调用，可以<strong>解决回调地狱</strong>的问题：<ul>
+<li>回调地狱：回调函数嵌套调用，外部回调函数异步执行的<strong>结果</strong>是嵌套的的回调函数的执行<strong>条件</strong>（外部的结果是内部的条件）</li>
+<li>回调地狱的缺点：不便于阅读、不便于异常处理</li>
+<li>解决方案：Promise链式调用</li>
+<li>终极解决方案：</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>初始化Promise对象： <code>const p = new Promise((resolve,reject)=&gt;&#123;&#125;)</code></p>
+</li>
+<li><p>定义Promise回调函数： <code>p.then((value)=&gt;&#123;&#125;,(reason)=&gt;&#123;&#125;)</code></p>
+</li>
+<li><p>可以利用<code>util</code>模块中的<code>promisify()</code>方法将别的方法封装成一个promise风格的方法(可以返回promise对象),然后调用并直接定义<code>then()</code>方法</p>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs reasonml">    <span class="hljs-keyword">let</span> myReadFile = util.promisify(fs.readFile);<br>    <br>    <span class="hljs-comment">//在调用myReadFile()后面直接定义then()方法</span><br>    my<span class="hljs-constructor">ReadFile(&#x27;.<span class="hljs-operator">/</span><span class="hljs-params">resources</span><span class="hljs-operator">/</span><span class="hljs-params">content</span>.<span class="hljs-params">txt</span>&#x27;)</span>.<span class="hljs-keyword">then</span>(value=&gt;&#123;<br>    console.log(value.<span class="hljs-keyword">to</span><span class="hljs-constructor">String()</span>);<br>&#125;,reason=&gt;&#123;<br>    console.log(reason);<br>&#125;)<br></code></pre></td></tr></table></figure></li>
+<li><p>Promise的状态改变</p>
+<ul>
+<li>实例对象中的一个属性(PromiseState)</li>
+<li>三种可能的值：pending(未决定的),resolve/fullfilled(成功),reject(失败)</li>
+<li>只有两种改变状态的办法：<ul>
+<li>pending =&gt; resolved</li>
+<li>pending =&gt; rejected</li>
+<li>只有这两种，且一个promise对象只能改变一次</li>
+<li>不能由rejected直接变为resolved</li>
+<li>无论变为成功还是失败，都会有一个结果数据</li>
+<li>成功的结果数据一般称为value，失败的结果数据一般称为reason</li>
+</ul>
+</li>
+<li>不能直接操作<code>PromiseState</code></li>
+</ul>
+</li>
+<li><p>Promise对象的值: <code>PromiseResult</code></p>
+<ul>
+<li>保存着对象成功/失败的结果</li>
+<li>修改<code>PromiseResult</code>的方法<ul>
+<li>resolve</li>
+<li>reject</li>
+<li>无论成功还是失败，相关的值都是保存在了<code>PromiseResult</code>属性里</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Promise的基本流程<br><img src="assets/16456838811605.jpg" srcset="/img/loading.gif" lazyload></p>
+</li>
+</ul>
+<h3 id="Promise-相关API"><a href="#Promise-相关API" class="headerlink" title="Promise 相关API"></a>Promise 相关API</h3><ul>
+<li>API<ul>
+<li>Promise构造函数: Promise(excutor){}<ul>
+<li>executor函数：<strong>执行器</strong>函数： <code>(resolve,reject) =&gt; &#123;&#125;</code></li>
+<li>resolve函数：内部定义成功时调用的函数： <code>value =&gt; &#123;&#125;</code></li>
+<li>reject函数： 内部定义失败时调用的函数： <code>reason =&gt; &#123;&#125;</code></li>
+<li>说明：executor会在Promise内部立即<strong>同步</strong>调用(重要：同步调用的，不会进入到消息队列中去)，异步操作在执行器中执行</li>
+</ul>
+</li>
+<li><code>Promise.prototype.then()</code>方法： （onResolved,onRejected）=&gt;{}<ul>
+<li><code>onResolved()</code>函数：成功的回调函数 <code>value =&gt; &#123;&#125;</code></li>
+<li><code>onRejected()</code>函数：失败的回调函数 <code>reason =&gt; &#123;&#125;</code></li>
+<li>说明：指定用于得到成功value的成功回调和用于得到失败reason的失败回调。返回一个新的Promise对象</li>
+</ul>
+</li>
+<li><code>Promise.prototype.catch()</code>方法(只能指定失败的回调)： <code>(onRejected) =&gt; &#123;&#125;</code><ul>
+<li><code>onRejected()</code>函数：失败的回调函数 <code>reason=&gt;&#123;&#125;</code></li>
+</ul>
+</li>
+<li><code>Promise.resolve()</code>: value=&gt;{}   此方法是Promise的方法，而不是实例的方法<ul>
+<li>value: 成功的数据或是promise对象</li>
+<li>快速返回一个成功/失败的promise对象</li>
+</ul>
+</li>
+<li><code>Promise.reject()</code>：<ul>
+<li>reason: 成功的数据或是Promise对象</li>
+<li>快速返回一个失败的promise对象</li>
+</ul>
+</li>
+<li><code>Promise.all()</code>: (promises)=&gt;{}<ul>
+<li>Promises:包含n个Promise对象的数组</li>
+<li>说明：返回一个新的Promise对象，只有所有的Promise都成功这个Promise对象才成功，只要有一个失败了就直接失败</li>
+<li>这个Promise成功的结果是<strong>所有成功的Promise对象组成的数组</strong>；失败的结果是在这个数组中失败的那个Promise对象的失败的结果</li>
+</ul>
+</li>
+<li><code>Promise.race()</code>: (promises)=&gt;{}<ul>
+<li>Promises:包含n个Promise的数组</li>
+<li>说明：返回一个新的Promise对象，第一个完成的Promise的结果状态就是最终的结果状态。第一个成功，则整个Promise.race成功,第一个失败，则整个都失败</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="Promise关键问题"><a href="#Promise关键问题" class="headerlink" title="Promise关键问题"></a>Promise关键问题</h3><ul>
+<li>如何改变Promise的状态？<ul>
+<li>三种方法<ul>
+<li><code>resolve(&#39;ok&#39;)</code></li>
+<li><code>reject(&#39;error&#39;)</code></li>
+<li><code>throw(&#39;throw error&#39;)</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>一个Promise指定多个成功/失败回调函数，都会调用吗？<br>当Promise改变为对应状态时，<strong>所有</strong>相关的回调函数都会调用</li>
+<li>改变Promise状态和<strong>指定</strong>（并不是执行）回调函数谁先执行？谁后执行？（<code>resolve()</code>先执行还是<code>then()</code>先执行？）<ul>
+<li><strong>谁都有可能先执行</strong>：<ul>
+<li>当Promise执行器中的函数是<strong>同步</strong>函数(不包含回调、异步之类的)时，先执行<code>resolve()</code>，后执行<code>then()</code>函数</li>
+<li>当Promise执行器中的函数是<strong>异步</strong>任务时，类似于<code>setTimeout(()=&gt;&#123;resolve()&#125;,5000)</code>时，先执行<code>then()</code>里的函数，后执行<code>resolve()</code>函数</li>
+</ul>
+</li>
+<li>如何先改变状态再指定回调？<ul>
+<li>在执行器中直接调用<code>resolve()/reject()</code>（同步任务）</li>
+<li>延迟更长时间再调用<code>then()</code>方法，在<code>then()</code>方法中使用<code>setTimeout()</code></li>
+</ul>
+</li>
+<li>什么时候才能得到数据（指的就是回调函数什么时候执行）？<ul>
+<li>如果先指定回调，那么当状态改变时，回调就会调用并且拿到数据（指定回调 -&gt; 改变状态 -&gt; 执行回调）</li>
+<li>如果先改变状态，那么指定回调的时候，回调才会调用并拿到数据（改变状态 -&gt; 指定并执行会带哦）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Promise.then()返回的新Promise的结果状态由什么决定<ul>
+<li>简单表达：由then()指定的回调函数执行的结果决定</li>
+<li><code>then(value=&gt;&#123;&#125;,reason=&gt;&#123;&#125;)</code>里返回的状态是什么，<code>then()</code>返回的promise的状态就是什么</li>
+<li>详细情况：<ul>
+<li>如果抛出异常，新Promise变为rejected，其中参数reason为抛出的异常</li>
+<li>如果返回一个非Promise对象，例如直接return 993，则新Promise对象的状态将为<code>fulfilled/resolved</code>，993就是PromiseResult</li>
+<li>如果返回的是一个Promise对象，则该对象的状态以及结果就是新Promise的状态和结果</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Promise如何串联多个操作任务？<ul>
+<li>Promise的then()返回一个新的Promise对象，就可以看成then()的链式调用</li>
+<li>通过then的链式调用串联多个同步/异步任务</li>
+</ul>
+</li>
+<li>Promise的异常穿透？<ul>
+<li>当使用Promise的then链式调用时，可以在最后指定失败的回调函数</li>
+<li>在此期间，前面出了任何的异常，都会跳转到最后的失败的回调函数中去处理</li>
+<li>在最后可以使用<code>.catch(reason=&gt;&#123;console.log(reason)&#125;)</code></li>
+<li>注意：整个链式调用中，失败的任务的前边的任务会<strong>正常执行</strong></li>
+</ul>
+</li>
+<li>中断Promise链？<ul>
+<li>有且只有一种方法：返回一个pending状态的新的Promise对象</li>
+<li><code>return new Promise(()=&gt;&#123;&#125;)</code>即可</li>
+</ul>
+</li>
+</ul>
+<h3 id="Promise自定义封装（手写Promise）"><a href="#Promise自定义封装（手写Promise）" class="headerlink" title="Promise自定义封装（手写Promise）"></a>Promise自定义封装（手写Promise）</h3><h3 id="async与await"><a href="#async与await" class="headerlink" title="async与await"></a>async与await</h3><ul>
+<li>async函数<ul>
+<li>函数的返回值是一个Promise对象(返回规则和<code>Promise.then()</code>方法的一摸一样)</li>
+<li>Promise对象的结果<strong>由async函数执行出来的返回值决定</strong><ul>
+<li>如果aync函数返回值是一个<strong>非Promise类型</strong>的数据，则返回一个成功的Promise对象</li>
+<li>如果返回的是一个Promise对象，返回的Promise对象即该函数的返回值</li>
+<li>如果抛出异常，则返回一个失败的Promise对象</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>await表达式<ul>
+<li>await右侧的表达式一般为Promise对象，但也可以是其他的值</li>
+<li>如果表达式是Promise对象，await返回的是Promise<strong>成功</strong>的值</li>
+<li>如果表达式是其他值，则直接将此值作为await的返回值</li>
+</ul>
+</li>
+<li>注意<ul>
+<li>await必须写在async函数中，但async函数中可以没有await</li>
+<li>如果await的Promise失败了，则将抛出异常，此时需要通过<code>try...catch</code>捕获处理</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/02/28/%E7%A7%8B%E6%8B%9B%E5%87%86%E5%A4%87/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">秋招加油</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/02/01/ES6-ES11%E4%B8%93%E9%A1%B9/">
+                        <span class="hidden-mobile">ES6-ES11专项</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

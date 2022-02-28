@@ -1,0 +1,571 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/tiger.png">
+  <link rel="icon" href="/img/tiger.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="Chase Yin">
+  <meta name="keywords" content="">
+  
+  <title>React扩展 - 阴晓峰的博客</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.9-a","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>阴晓峰的博客</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('https://i.loli.net/2021/04/26/45lTX7CAYJPZKH8.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="React扩展">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-01-28 16:18" pubdate>
+        2022年1月28日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.7k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      21
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">React扩展</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2022年2月28日 下午
+                
+              </p>
+            
+            <div class="markdown-body">
+              <h2 id="1-setState"><a href="#1-setState" class="headerlink" title="1. setState"></a>1. setState</h2><h3 id="setState更新状态的2种写法"><a href="#setState更新状态的2种写法" class="headerlink" title="setState更新状态的2种写法"></a>setState更新状态的2种写法</h3><figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs pf">	(<span class="hljs-number">1</span>). <span class="hljs-built_in">set</span>State(<span class="hljs-keyword">state</span>Change, [callback])------对象式的<span class="hljs-built_in">set</span>State<br>            <span class="hljs-number">1</span>.<span class="hljs-keyword">state</span>Change为状态改变对象(该对象可以体现出状态的更改)<br>            <span class="hljs-number">2</span>.callback是可选的回调函数, 它在状态更新完毕、界面也更新后(render调用后)才被调用<br>					<br>	(<span class="hljs-number">2</span>). <span class="hljs-built_in">set</span>State(updater, [callback])------函数式的<span class="hljs-built_in">set</span>State<br>            <span class="hljs-number">1</span>.updater为返回<span class="hljs-keyword">state</span>Change对象的函数。<br>            <span class="hljs-number">2</span>.updater可以接收到<span class="hljs-keyword">state</span>和props。<br>            <span class="hljs-number">4</span>.callback是可选的回调函数, 它在状态更新、界面也更新后(render调用后)才被调用。<br>总结:<br>		<span class="hljs-number">1</span>.对象式的<span class="hljs-built_in">set</span>State是函数式的<span class="hljs-built_in">set</span>State的简写方式(语法糖)<br>		<span class="hljs-number">2</span>.使用原则：<br>				(<span class="hljs-number">1</span>).如果新状态不依赖于原状态 ===&gt; 使用对象方式<br>				(<span class="hljs-number">2</span>).如果新状态依赖于原状态 ===&gt; 使用函数方式<br>				(<span class="hljs-number">3</span>).如果需要在<span class="hljs-built_in">set</span>State()执行后获取最新的状态数据, <br>					要在第二个callback函数中读取<br></code></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h2 id="2-lazyLoad"><a href="#2-lazyLoad" class="headerlink" title="2. lazyLoad"></a>2. lazyLoad</h2><h3 id="路由组件的lazyLoad"><a href="#路由组件的lazyLoad" class="headerlink" title="路由组件的lazyLoad"></a>路由组件的lazyLoad</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-comment">//1.通过React的lazy函数配合import()函数动态加载路由组件 ===&gt; 路由组件代码会被分开打包</span><br><span class="hljs-keyword">const</span> Login = lazy(<span class="hljs-function">()=&gt;</span><span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;@/pages/Login&#x27;</span>))<br><br><span class="hljs-comment">//2.通过&lt;Suspense&gt;指定在加载得到路由打包文件前显示一个自定义loading界面</span><br>&lt;Suspense fallback=&#123;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>loading.....<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span></span>&#125;&gt;<br>       &lt;Switch&gt;<br>           &lt;Route path=<span class="hljs-string">&quot;/xxx&quot;</span> component=&#123;Xxxx&#125;/&gt;<br>           &lt;Redirect to=<span class="hljs-string">&quot;/login&quot;</span>/&gt;<br>       &lt;/Switch&gt;<br>   &lt;/Suspense&gt;<br></code></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h2 id="3-Hooks"><a href="#3-Hooks" class="headerlink" title="3. Hooks"></a>3. Hooks</h2><h4 id="1-React-Hook-Hooks是什么"><a href="#1-React-Hook-Hooks是什么" class="headerlink" title="1. React Hook/Hooks是什么?"></a>1. React Hook/Hooks是什么?</h4><figure class="highlight pf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs pf">(<span class="hljs-number">1</span>). Hook是React <span class="hljs-number">16.8</span>.<span class="hljs-number">0</span>版本增加的新特性/新语法<br>(<span class="hljs-number">2</span>). 可以让你在函数组件中使用 <span class="hljs-keyword">state</span> 以及其他的 React 特性<br></code></pre></td></tr></table></figure>
+
+<h4 id="2-三个常用的Hook"><a href="#2-三个常用的Hook" class="headerlink" title="2. 三个常用的Hook"></a>2. 三个常用的Hook</h4><figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs reasonml">(<span class="hljs-number">1</span>). State Hook: <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">React</span>.</span></span>use<span class="hljs-constructor">State()</span><br>(<span class="hljs-number">2</span>). Effect Hook: <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">React</span>.</span></span>use<span class="hljs-constructor">Effect()</span><br>(<span class="hljs-number">3</span>). Ref Hook: <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">React</span>.</span></span>use<span class="hljs-constructor">Ref()</span><br></code></pre></td></tr></table></figure>
+
+<h4 id="3-State-Hook"><a href="#3-State-Hook" class="headerlink" title="3. State Hook"></a>3. State Hook</h4><figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs reasonml">(<span class="hljs-number">1</span>). State Hook让函数组件也可以有state状态, 并进行状态数据的读写操作<br>(<span class="hljs-number">2</span>). 语法: const <span class="hljs-literal">[<span class="hljs-identifier">xxx</span>, <span class="hljs-identifier">setXxx</span>]</span> = <span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">React</span>.</span></span>use<span class="hljs-constructor">State(<span class="hljs-params">initValue</span>)</span>  <br>(<span class="hljs-number">3</span>). use<span class="hljs-constructor">State()</span>说明:<br>        参数: 第一次初始化指定的值在内部作缓存<br>        返回值: 包含<span class="hljs-number">2</span>个元素的数组, 第<span class="hljs-number">1</span>个为内部当前状态值, 第<span class="hljs-number">2</span>个为更新状态值的函数<br>(<span class="hljs-number">4</span>). set<span class="hljs-constructor">Xxx()</span><span class="hljs-number">2</span>种写法:<br>        set<span class="hljs-constructor">Xxx(<span class="hljs-params">newValue</span>)</span>: 参数为非函数值, 直接指定新的状态值, 内部用其覆盖原来的状态值<br>        set<span class="hljs-constructor">Xxx(<span class="hljs-params">value</span> =&gt; <span class="hljs-params">newValue</span>)</span>: 参数为函数, 接收原本的状态值, 返回新的状态值, 内部用其覆盖原来的状态值<br></code></pre></td></tr></table></figure>
+
+<h4 id="4-Effect-Hook"><a href="#4-Effect-Hook" class="headerlink" title="4. Effect Hook"></a>4. Effect Hook</h4><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs arcade">(<span class="hljs-number">1</span>). Effect Hook 可以让你在函数组件中执行副作用操作(用于模拟类组件中的生命周期钩子)<br>(<span class="hljs-number">2</span>). React中的副作用操作:<br>        发ajax请求数据获取<br>        设置订阅 / 启动定时器<br>        手动更改真实DOM<br>(<span class="hljs-number">3</span>). 语法和说明: <br>        useEffect(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> &#123; <br>          <span class="hljs-comment">// 在此可以执行任何带副作用操作</span><br>          <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> &#123; <span class="hljs-comment">// 在组件卸载前执行</span><br>            <span class="hljs-comment">// 在此做一些收尾工作, 比如清除定时器/取消订阅等</span><br>          &#125;<br>        &#125;, [stateValue]) <span class="hljs-comment">// 如果指定的是[], 回调函数只会在第一次render()后执行</span><br>    <br>(<span class="hljs-number">4</span>). 可以把 useEffect Hook 看做如下三个函数的组合<br>        componentDidMount()<br>        componentDidUpdate()<br>    	componentWillUnmount() <br></code></pre></td></tr></table></figure>
+
+<h4 id="5-Ref-Hook"><a href="#5-Ref-Hook" class="headerlink" title="5. Ref Hook"></a>5. Ref Hook</h4><figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs reasonml">(<span class="hljs-number">1</span>). Ref Hook可以在函数组件中存储/查找组件内的标签或任意其它数据<br>(<span class="hljs-number">2</span>). 语法: const refContainer = use<span class="hljs-constructor">Ref()</span><br>(<span class="hljs-number">3</span>). 作用:保存标签对象,功能与<span class="hljs-module-access"><span class="hljs-module"><span class="hljs-identifier">React</span>.</span></span>create<span class="hljs-constructor">Ref()</span>一样<br></code></pre></td></tr></table></figure>
+
+
+
+<hr>
+<h2 id="4-Fragment"><a href="#4-Fragment" class="headerlink" title="4. Fragment"></a>4. Fragment</h2><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><pre><code>&lt;Fragment&gt;&lt;Fragment&gt;
+&lt;&gt;&lt;/&gt;
+</code></pre>
+<h3 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h3><blockquote>
+<p>可以不用必须有一个真实的DOM根标签了</p>
+</blockquote>
+<hr/>
+
+<h2 id="5-Context"><a href="#5-Context" class="headerlink" title="5. Context"></a>5. Context</h2><h3 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h3><blockquote>
+<p>一种组件间通信方式, 常用于【祖组件】与【后代组件】间通信</p>
+</blockquote>
+<h3 id="使用-1"><a href="#使用-1" class="headerlink" title="使用"></a>使用</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-number">1</span>) 创建Context容器对象：<br>	<span class="hljs-keyword">const</span> XxxContext = React.createContext()  <br>	<br><span class="hljs-number">2</span>) 渲染子组时，外面包裹xxxContext.Provider, 通过value属性给后代组件传递数据：<br>	&lt;xxxContext.Provider value=&#123;数据&#125;&gt;<br>		子组件<br>    &lt;/xxxContext.Provider&gt;<br>    <br><span class="hljs-number">3</span>) 后代组件读取数据：<br><br>	<span class="hljs-comment">//第一种方式:仅适用于类组件 </span><br>	  <span class="hljs-keyword">static</span> contextType = xxxContext  <span class="hljs-comment">// 声明接收context</span><br>	  <span class="hljs-built_in">this</span>.context <span class="hljs-comment">// 读取context中的value数据</span><br>	  <br>	<span class="hljs-comment">//第二种方式: 函数组件与类组件都可以</span><br>	  &lt;xxxContext.Consumer&gt;<br>	    &#123;<br>	      value =&gt; ( <span class="hljs-comment">// value就是context中的value数据</span><br>	        要显示的内容<br>	      )<br>	    &#125;<br>	  &lt;/xxxContext.Consumer&gt;<br></code></pre></td></tr></table></figure>
+
+<h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><pre><code>在应用开发中一般不用context, 一般都用它的封装react插件
+</code></pre>
+<hr/>
+
+
+<h2 id="6-组件优化"><a href="#6-组件优化" class="headerlink" title="6. 组件优化"></a>6. 组件优化</h2><h3 id="Component的2个问题"><a href="#Component的2个问题" class="headerlink" title="Component的2个问题"></a>Component的2个问题</h3><blockquote>
+<ol>
+<li><p>只要执行setState(),即使不改变状态数据, 组件也会重新render() ==&gt; 效率低</p>
+</li>
+<li><p>只当前组件重新render(), 就会自动重新render子组件，纵使子组件没有用到父组件的任何数据 ==&gt; 效率低</p>
+</li>
+</ol>
+</blockquote>
+<h3 id="效率高的做法"><a href="#效率高的做法" class="headerlink" title="效率高的做法"></a>效率高的做法</h3><blockquote>
+<p> 只有当组件的state或props数据发生改变时才重新render()</p>
+</blockquote>
+<h3 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h3><blockquote>
+<p> Component中的shouldComponentUpdate()总是返回true</p>
+</blockquote>
+<h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><pre><code>办法1: 
+    重写shouldComponentUpdate()方法
+    比较新旧state或props数据, 如果有变化才返回true, 如果没有返回false
+办法2:  
+    使用PureComponent
+    PureComponent重写了shouldComponentUpdate(), 只有state或props数据有变化才返回true
+    注意: 
+        只是进行state和props数据的浅比较, 如果只是数据对象内部数据变了, 返回false  
+        不要直接修改state数据, 而是要产生新数据
+项目中一般使用PureComponent来优化
+</code></pre>
+<hr/>
+
+
+<h2 id="7-render-props"><a href="#7-render-props" class="headerlink" title="7. render props"></a>7. render props</h2><h3 id="如何向组件内部动态传入带内容的结构-标签"><a href="#如何向组件内部动态传入带内容的结构-标签" class="headerlink" title="如何向组件内部动态传入带内容的结构(标签)?"></a>如何向组件内部动态传入带内容的结构(标签)?</h3><pre><code>Vue中: 
+    使用slot技术, 也就是通过组件标签体传入结构  &lt;A&gt;&lt;B/&gt;&lt;/A&gt;
+React中:
+    使用children props: 通过组件标签体传入结构
+    使用render props: 通过组件标签属性传入结构,而且可以携带数据，一般用render函数属性
+</code></pre>
+<h3 id="children-props"><a href="#children-props" class="headerlink" title="children props"></a>children props</h3><pre><code>&lt;A&gt;
+  &lt;B&gt;xxxx&lt;/B&gt;
+&lt;/A&gt;
+&#123;this.props.children&#125;
+问题: 如果B组件需要A组件内的数据, ==&gt; 做不到 
+</code></pre>
+<h3 id="render-props"><a href="#render-props" class="headerlink" title="render props"></a>render props</h3><pre><code>&lt;A render=&#123;(data) =&gt; &lt;C data=&#123;data&#125;&gt;&lt;/C&gt;&#125;&gt;&lt;/A&gt;
+A组件: &#123;this.props.render(内部state数据)&#125;
+C组件: 读取A组件传入的数据显示 &#123;this.props.data&#125; 
+</code></pre>
+<hr/>
+
+<h2 id="8-错误边界"><a href="#8-错误边界" class="headerlink" title="8. 错误边界"></a>8. 错误边界</h2><h4 id="理解："><a href="#理解：" class="headerlink" title="理解："></a>理解：</h4><p>错误边界(Error boundary)：用来捕获后代组件错误，渲染出备用页面</p>
+<h4 id="特点："><a href="#特点：" class="headerlink" title="特点："></a>特点：</h4><p>只能捕获后代组件生命周期产生的错误，不能捕获自己组件产生的错误和其他组件在合成事件、定时器中产生的错误</p>
+<h5 id="使用方式："><a href="#使用方式：" class="headerlink" title="使用方式："></a>使用方式：</h5><p>getDerivedStateFromError配合componentDidCatch</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs js"><span class="hljs-comment">// 生命周期函数，一旦后台组件报错，就会触发</span><br><span class="hljs-keyword">static</span> <span class="hljs-function"><span class="hljs-title">getDerivedStateFromError</span>(<span class="hljs-params">error</span>)</span> &#123;<br>    <span class="hljs-built_in">console</span>.log(error);<br>    <span class="hljs-comment">// 在render之前触发</span><br>    <span class="hljs-comment">// 返回新的state</span><br>    <span class="hljs-keyword">return</span> &#123;<br>        hasError: <span class="hljs-literal">true</span>,<br>    &#125;;<br>&#125;<br><br><span class="hljs-function"><span class="hljs-title">componentDidCatch</span>(<span class="hljs-params">error, info</span>)</span> &#123;<br>    <span class="hljs-comment">// 统计页面的错误。发送请求发送到后台去</span><br>    <span class="hljs-built_in">console</span>.log(error, info);<br>&#125;<br></code></pre></td></tr></table></figure>
+<h2 id="9-组件通信方式总结"><a href="#9-组件通信方式总结" class="headerlink" title="9. 组件通信方式总结"></a>9. 组件通信方式总结</h2><h4 id="组件间的关系："><a href="#组件间的关系：" class="headerlink" title="组件间的关系："></a>组件间的关系：</h4><ul>
+<li>父子组件</li>
+<li>兄弟组件（非嵌套组件）</li>
+<li>祖孙组件（跨级组件）</li>
+</ul>
+<h4 id="几种通信方式："><a href="#几种通信方式：" class="headerlink" title="几种通信方式："></a>几种通信方式：</h4><pre><code>    1.props：
+        (1).children props
+        (2).render props
+    2.消息订阅-发布：
+        pubs-sub、event等等
+    3.集中式管理：
+        redux、dva等等
+    4.conText:
+        生产者-消费者模式
+</code></pre>
+<h4 id="比较好的搭配方式："><a href="#比较好的搭配方式：" class="headerlink" title="比较好的搭配方式："></a>比较好的搭配方式：</h4><pre><code>    父子组件：props
+    兄弟组件：消息订阅-发布、集中式管理
+    祖孙组件(跨级组件)：消息订阅-发布、集中式管理、conText(开发用的少，封装插件用的多)
+</code></pre>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2022/02/01/ES6-ES11%E4%B8%93%E9%A1%B9/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">ES6-ES11专项</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2021/09/28/React%E5%AD%A6%E4%B9%A0/">
+                        <span class="hidden-mobile">React学习</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>

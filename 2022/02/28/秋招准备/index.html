@@ -1,0 +1,1363 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/tiger.png">
+  <link rel="icon" href="/img/tiger.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="Chase Yin">
+  <meta name="keywords" content="">
+  
+  <title>秋招加油 - 阴晓峰的博客</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.4.0/styles/github-gist.min.css" />
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.9-a","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null}}};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>阴晓峰的博客</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('https://i.loli.net/2021/04/26/45lTX7CAYJPZKH8.jpg') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="秋招加油">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2022-02-28 16:19" pubdate>
+        2022年2月28日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      21.3k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      239
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">秋招加油</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2022年2月28日 下午
+                
+              </p>
+            
+            <div class="markdown-body">
+              <ol>
+<li>TCP的三次握手（用于建立TCP连接）</li>
+</ol>
+<p><img src="assets/16412231775621.jpg" srcset="/img/loading.gif" lazyload></p>
+<ul>
+<li>第一次握手：client将SYN置为1，然后随机产生一个初始序列号seq=j发送给server，然后进入SYN_SENT的状态。</li>
+<li>第二次握手： server收到client的SYN=1之后，知道了此client想要建立连接，于是将自己的SYN和ACK设置为1，然后产生一个ackNum = j（client发来的序列号） + 1 和一个随机生成的序列号seq = k 一并发送给client。此时server进入SYN_RCVD状态。</li>
+<li>第三次握手： client检查新发来的ackNum是否等于自己之前发的序列号加一（seq+1），还要检查ACK是否为1。检查正确之后，client将自己的ACK设置为1，并产生一个ackNum = k （server发来的序列号） + 1 然后发送给server。 此时client进入ESTABLISHED状态。server检查传来的ackNum是否等于自己之前产生的序列号加一，相等的话，进入ESTABLISHED状态。</li>
+</ul>
+<p>following questions：</p>
+<ul>
+<li>TCP建立连接可以只进行两次握手吗？为什么？</li>
+</ul>
+<p><em>可能出现已经失效（超时）的连接请求又被发送到了server。</em></p>
+<p>首先，两次握手意味着第二次握手之后，server就会与client建立连接。但是这种情况下无法规避一个问题：client在很久以前就发送过一个连接请求，但由于网络或别的原因造成了滞留，server收到此请求并于client建立连接，但事实上此client已经不再需要和server建立连接，也不会再给server发送任何数据。server端会一直等待client发数据来，这样做造成了很多不必要的资源浪费。而采用三次握手时，server接受不到client发来的确认，也就不会一直等待。</p>
+<p>其次，两次握手无法保证client正确接收到server发送来的报文（因为client并不会再给server发一个确认信息）。也无法保证client和server之间的序列号（seq）成功互换。</p>
+<ul>
+<li>可以采用四次握手吗？为什么？</li>
+</ul>
+<p>可以，但是很明显会<em>降低传输的速率。</em></p>
+<p><strong>四次握手</strong>的概念： 第二次握手：server只发送ACK和acknowledge number； 第三次握手： server发送SYN和初始序列号（seq）； 第四次握手则和原来协议的client发给server的第三次握手一样。出于优化目的，四次握手的二、三可以合并。</p>
+<p>四次握手的概念就是原先第二次握手发送的报文被分成两次发送。（一次ACK和ackNum，一次是发送自己的SYN和seq）</p>
+<ul>
+<li>第三次握手中，如果客户端的ACK没有送达服务器会怎样？</li>
+</ul>
+<p>server端和client端有不同的反应。</p>
+<p>server端（重发）： 由于没有收到client发来的ACK确认，因此会<strong>重新发之前发过的SYN和ACK</strong>，默认重发五次，之后会自动地关闭连接并进入CLOSED状态。</p>
+<p>client端：</p>
+<p>第一种情况：在server进行超时重发的过程中， 如果client向server发送数据，则数据中的<strong>ACK位为1</strong>，server会自动读取ACK的值并将status设置为ESTABLISH。</p>
+<p>第二种情况： 如果server已经进入到了CLOSED状态，此时client向server发送数据，则<strong>server会以RST包应答</strong>。（RST是TCP首部中的6个标志比特之一，表示<strong>重置连接</strong>、<strong>复位连接</strong>）</p>
+<ul>
+<li>如果client和server已经建立了连接，但此时client又出现了故障怎么办？</li>
+</ul>
+<p>server每收到一次client的请求都会重新复位一个<strong>计时器</strong>，计时器的时间通常记为2小时，若两小时内没有收到任何client的数据，server则会开始发送<strong>探测报文</strong>（每隔75s发送一个，发送10个）。若发送10个之后都没有任何反应，则server会认定client端出故障，从而关闭连接。</p>
+<ul>
+<li>初始的序列号是什么？</li>
+</ul>
+<p>TCP连接的一方A，随机选择一个<strong>32位的序列号</strong>（Sequence Number）作为发送数据的初始序列号（Initial Sequence Number，ISN），比如为1000，以该序列号为原点，对要传送的数据进行编号：1001、1002…三次握手时，把这个初始序列号传送给另一方B，以便在传输数据时，B可以确认什么样的数据编号是合法的；同时在进行数据传输时，A还可以确认B收到的每一个字节，如果A收到了B的确认编号（acknowledge number）是2001，就说明编号为1001-2000的数据已经被B成功接受。</p>
+<ol start="2">
+<li>TCP的四次挥手（用于中断TCP连接）</li>
+</ol>
+<p><img src="assets/16413697863339.jpg" srcset="/img/loading.gif" lazyload></p>
+<ul>
+<li>第一次挥手： client将FIN置为1，发送一个序列号seq给server，进入FIN_WAIT_1状态；</li>
+<li>第二次挥手： server收到client发来的FIN之后，发送一个ACK=1， ackonwledge number = 收到的序列号（seq）+1，然后进入CLOSE_WAIT状态。此时client已经不会再发送数据了，但是仍然可以接收server发来的数据。</li>
+<li>第三次挥手： server将FIN置为1，发送一个序列号（seq）给client，进入LAST_ACK状态。</li>
+<li>第四次挥手： client收到server的fin之后，进入TIME_WAIT状态；接着将ACK置为1，发送一个ackonwledge number = 序列号（seq） + 1 给server。 server收到后，确认acknowledge number后，变为CLOSED状态，不再向client发送数据。 client等待2* MSL（报文段最长寿命）时间后，也进入CLOSED状态。完成四次挥手。</li>
+</ul>
+<p>Following questions：</p>
+<p><em>Q:为什么不能把server发送来的ACK和FIN合并起来（第二三次挥手），变成三次挥手（CLOSE_WAIT状态的意义是什么）？</em></p>
+<p>Ans: 因为server收到client发送的断连请求的时候，可能server本身还有一部分<strong>数据没有发送完毕</strong>，此时server先回复一个ack告诉client自己已经知道了client想要断开连接。待全部数据都发送完毕之后，server再发送FIN，断开server和client之间的连接。</p>
+<p><em>Q:如果第二次挥手时server发送的ACK没有送达client，则会发生什么？</em></p>
+<p>Ans: client没有收到来自server的ack（知晓通知），则会重新发送FIN（断连请求）给server。</p>
+<p><em>Q:client端的TIME_WAIT状态的意义是什么？</em></p>
+<p>Ans: 第四次挥手时， client发给server的ack可能会丢失，TIME_WAIT状态就是用来重发可能丢失的ACK报文。如果server没有收到ack报文，则会重发FIN（重复第三次挥手），如果client在 <strong>2*MSL</strong> 的时间内收到FIN，就会重新发送ACK给server并且再次等待2*MSN，这样就可以防止server因为没有收到ack而不断地重发FIN。</p>
+<p>MSL是指一个片段在网络中最大的存活时间，2MSL就是<strong>一个发送</strong>和<strong>一个回复</strong>所需要的最大时间。如果直到2*MSL，client都没有再次收到FIN，则client会断定server已经成功接收到了自己发送的ACK，则结束TCP连接。</p>
+<p><em>Q:如果只有两次挥手，则会发生什么样的情况？</em></p>
+<p>Ans： 两次挥手是指client发送FIN（断连请求）之后，server端接收到请求并发送ACK报文给client。client收到server发来的报文之后直接断开连接，此时如果<strong>server还有没有发送完的报文</strong>，<strong>则server端会抛出异常，有可能整个系统crash</strong>。</p>
+<p><em>Q:如果只有三次挥手，则会发生什么样的情况？</em></p>
+<p>Ans： 如果只有三次挥手，则<strong>server不能及时的关闭连接已经相应的端口</strong>，这样做会导致连接空闲一段时间，造成了<strong>资源浪费</strong>。</p>
+<ol start="3">
+<li>CDN原理</li>
+</ol>
+<p>CDN即<strong>内容分发网络</strong>。 </p>
+<p>基本原理： 广泛使用各种缓存服务器，并将缓存服务器分布到用户访问的相对集中的区域，当用户访问网络时，利用全局负载技术将用户的访问指向距离最近的缓存服务器以提高响应效率。</p>
+<ol start="4">
+<li>从输入url到显示页面的过程</li>
+</ol>
+<ul>
+<li>基础版本：<br>DNS解析URL（找到真实的服务器ip地址） -&gt; 建立TCP连接 -&gt; 发送HTTP请求 -&gt; 服务器处理请求并返回http报文 -&gt; 浏览器根据返回的报文渲染页面 -&gt; 结束连接</li>
+</ul>
+<p><em>先建立TCP连接，再发送http请求。</em></p>
+<ul>
+<li>详细版本：<ul>
+<li>在浏览器地址栏输入URL</li>
+<li>浏览器<strong>查看缓存</strong>。如果请求资源在缓存中且足够新鲜，则跳转到转码步骤<ul>
+<li>如果资源未缓存，则发起新请求</li>
+<li>如果已经缓存过了，则检查是否新鲜，如果足够新鲜则直接提供给客户端，否则与服务器进行验证。</li>
+<li>检验本地缓存是否新鲜有两个头可以使用：<code>Expires</code>(采用绝对时间，优先级第)和<code>Cacahe-Control</code>（采用相对时间，优先级高）</li>
+</ul>
+</li>
+<li>浏览器<strong>解析URL</strong>获取协议，主机，端口，路径（path）</li>
+<li>浏览器<strong>获取主机ip地址</strong><ul>
+<li>浏览器缓存</li>
+<li>本机缓存</li>
+<li>hosts文件</li>
+<li>路由器缓存</li>
+<li>ISP DNS缓存</li>
+<li>DNS递归查询（可能存在负载均衡导致每次IP不一样）</li>
+</ul>
+</li>
+<li>浏览器<strong>组装一个HTTP（GET）请求报文</strong></li>
+<li>浏览器打开一个socket并与目标IP、端口建立TCP连接，三次握手如下：<ul>
+<li>客户端发送一个TCP的<strong>syn=1</strong>，<strong>seq=x</strong>的包到服务器端口</li>
+<li>服务器发回<strong>syn=1</strong>，<strong>ack=x+1</strong>，<strong>seq=y</strong>的响应包</li>
+<li>客户端发送<strong>ack=y+1</strong>，<strong>seq=z</strong>的包</li>
+</ul>
+</li>
+<li>建立TCP连接后发送HTTP请求</li>
+<li>服务器接受请求并解析，将请求转发到服务程序，如虚拟主机使用http host头部判断请求的服务程序</li>
+<li>服务器检查<strong>http请求头是否包含缓存验证信息</strong>，如果验证缓存足够新鲜，则返回304（not modified）等对应状态码</li>
+<li>服务器端的处理程序读取完整请求并准备http响应</li>
+<li>服务器将响应报文通过<strong>TCP连接发送回浏览器</strong></li>
+<li>浏览器接受http响应，然后根据情况选择关闭TCP连接或者保留重用，关闭TCP连接的四次握手如下：<ul>
+<li>主动方发送Fin=1, Ack=Z, Seq=X的报文</li>
+<li>被动方发送ACK=X+1，Seq=Z的报文</li>
+<li>被动方发送Fin=1, Ack=X, Seq=Y的报文</li>
+<li>主动方发送Ack=Y+1，Seq=X的报文（彼此发送的ack都是对方发送的seq+1）</li>
+</ul>
+</li>
+<li>浏览器<strong>检查响应状态码</strong>：是否为1XX，3XX，4XX，这些情况处理与2XX不同</li>
+<li>如果资源可以缓存，则<strong>进行缓存</strong></li>
+<li>对响应进行<strong>解码</strong>（例如gzip解压缩）</li>
+<li>根据资源类型决定如何处理（假设资源为HTML文档）</li>
+<li>解析HTML文档，构建DOM树，下载资源，构造CSSOM树，执行js脚本</li>
+<li>构建DOM树：<ul>
+<li>Tokenizing：根据HTML规范将字符流解析为标记</li>
+<li>Lexing：词法分析将标记转换为对象并定义属性和规则</li>
+<li>DOM construction：根据HTML标记关系将对象组成DOM树</li>
+</ul>
+</li>
+<li>构建CSSOM树：<ul>
+<li>Tokenizing：字符流转换为标记流</li>
+<li>Node：根据标记创建节点</li>
+<li>CSSOM：根据节点创建CSSOM树</li>
+</ul>
+</li>
+<li>解析过程中遇到图片、样式表、js文件，则启动下载</li>
+<li>根据DOM树和CSSOM树构建渲染树<ul>
+<li>从DOM树的根节点遍历所有<strong>可见节点</strong>，不可见节点包括：1）<code>script</code>，<code>meta</code>这种本身不可见的标签。 2）被CSS隐藏的节点，如<code>display：none</code></li>
+<li>对每一个可见节点，找到恰当的CSSOM规则并应用</li>
+<li>发布可视节点的内容和计算样式</li>
+</ul>
+</li>
+<li>js解析如下：<ul>
+<li>浏览器创建Document对象并解析HTML，将解析到的元素和文本节点添加到文档中，此时<strong>document.readystate为loading</strong></li>
+<li>HTML解析器遇到<strong>没有async和defer的script时</strong>，将他们添加到文档中，然后执行行内或外部脚本。这些脚本会<strong>同步执行</strong>，并且在脚本下载和执行时解析器会暂停。这样就可以用<code>document.write（）</code>把文本插入到输入流中。<strong>同步脚本经常简单定义函数和注册事件处理程序，他们可以遍历和操作script和他们之前的文档内容。</strong></li>
+<li>当解析器遇到设置了<strong>async</strong>属性的script时，开始下载脚本并继续解析文档。<strong>脚本会在它下载完成后尽快执行，但是解析器不会停下来等他加载</strong>。异步脚本**禁止使用document.write()**，他们可以自己访问自己script和之前的文档元素。</li>
+<li>当文档完成解析，<strong>document.readState</strong>变成<strong>interactive</strong></li>
+<li>所有<strong>defer</strong>脚本会按照<strong>在文档出现的顺序执行</strong>。<strong>延迟脚本能访问完整的文档树</strong>，但是<strong>禁止使用</strong><code>document.write()</code></li>
+<li>浏览器在<strong>Document</strong>对象上触发<strong>DOMContentLoaded</strong>事件</li>
+<li>此时文档完全解析完成，浏览器可能还在等待如图片等内容加载。等这些内容完成载入并且<strong>所有异步脚本完成载入和执行</strong>，<code>document.readState=complete</code>，window触发load事件</li>
+</ul>
+</li>
+<li>显示页面（HTML解析过程中会逐步显示页面）</li>
+</ul>
+</li>
+</ul>
+<ol start="5">
+<li>HTTP的<strong>头部</strong>包含哪些内容？常见的请求方法？</li>
+</ol>
+<p>常见的有GET，POST。即GET，POST请求。</p>
+<p>form表单使用GET时，数据会以querystring的形式存在于url中，因此不够安全，大小也存在限制。<br>使用POST则不会出现上述情况，因为POST会将数据存放在http报文体中。</p>
+<p><em>GET方法和POST方法的差异：</em></p>
+<ul>
+<li>GET方法的参数通过URL传递；POST方法则放在request body中</li>
+<li>GET请求只能进行URL编码；POST请求有多种编码的方式</li>
+</ul>
+<ol start="6">
+<li>请求方法 head特性</li>
+</ol>
+<p>head只请求页面的<strong>首部</strong>，head方法与GET方法相同，只不过服务器响应时不会返回消息体。</p>
+<p>一个head请求的响应中，http头中包含的元信息应该和GET请求的响应信息相同，此方法可以用来获得隐含的元信息而不需要传输实体本身。这种方法经常用来测试超连接的<strong>有效性</strong>和<strong>可用性</strong>。</p>
+<p>主要特点：</p>
+<ul>
+<li>只检查资源的首部</li>
+<li>测试超链接的有效性和可用性</li>
+<li>检测网页是否<strong>被修改</strong></li>
+<li>用于自动搜索机器人<strong>获取网页的标志信息</strong>，<strong>RSS种子信息</strong>或者传递<strong>安全认证信息</strong>等</li>
+</ul>
+<ol start="7">
+<li>HTTP状态码一览</li>
+</ol>
+<ul>
+<li><code>1XX</code>：<strong>信息</strong>状态码<ul>
+<li><code>100 Continue</code>继续，一般在发送<code>post</code>请求时，发送了<code>http header</code>之后，服务端返回此信息，表示确认，可以继续发送具体参数信息</li>
+</ul>
+</li>
+<li><code>2XX</code>：<strong>成功</strong>状态码<ul>
+<li><code>200 OK</code> 正常返回信息</li>
+<li><code>201 Created</code> 请求成功并且服务器<strong>创建了新的资源</strong></li>
+<li><code>202 Accepted</code> 服务器<strong>已接受请求</strong>，但尚未处理</li>
+</ul>
+</li>
+<li><code>3XX</code>：<strong>重定向</strong><ul>
+<li><code>301 Moved Permanently</code> 请求的网页已永久移动到新的位置</li>
+<li><code>302 Found</code> 临时性重定向</li>
+<li><code>303 See Other</code> 临时性重定向，且总是使用<code>GET</code>请求新的<code>URI</code>（表示web上每一种可用的资源）</li>
+<li><code>304 Not Modified</code> 自上次请求后，请求的网页未修改过</li>
+</ul>
+</li>
+<li><code>4XX</code>：<strong>客户端</strong>错误<ul>
+<li><code>400 Bad Request</code> 服务器无法理解请求的格式，客户端不应该再次使用相同的参数发起请求</li>
+<li><code>401 Unauthorized</code> 请求的内容未授权</li>
+<li><code>403 Forbidden</code> 禁止访问</li>
+<li><code>404 Not Found</code> 找不到与<code>URI</code>（统一资源标志符）相匹配的资源</li>
+</ul>
+</li>
+<li><code>5XX</code>：<strong>服务器</strong>错误<ul>
+<li><code>500 Internal Server Error</code> 最常见的服务器端错误</li>
+<li><code>503 Service Unavailable</code> 服务器端暂时无法处理请求（可能是过载或者维护）</li>
+</ul>
+</li>
+</ul>
+<ol start="8">
+<li>OSI七层模型</li>
+</ol>
+<p><em>从上到下</em></p>
+<ul>
+<li>应用层： 文件传输，常用协议：http，snmp，ftp</li>
+<li>表示层： 数据格式化，代码转换，数据加密</li>
+<li>会话层： 建立、解除对话</li>
+<li>传输层： 提供端对端的接口：tcp，ucp，https</li>
+<li>网络层： 为数据包选择路由，IP，icmp</li>
+<li>数据链路层： 传输有地址的帧</li>
+<li>物理层： 二进制的数据形式在物理媒体上传输数据</li>
+<li>icmp：internet控制消息协议：用于在IP主机、路由器之间传递控制消息*</li>
+</ul>
+<ol start="9">
+<li>UDP协议（User Datagram Protocol， 用户数据报协议）</li>
+</ol>
+<p>首先，UDP是<strong>传输层</strong>的协议。功能有：复用，分用和差错检测。</p>
+<p><em>UCP相较于TCP具有的优势：</em></p>
+<ul>
+<li>UCP无连接，时间上不存在建立连接所需要的时间延迟。空间上，TCP需要在端系统中<strong>维护连接状态</strong>，需要一定的开销。</li>
+<li>UCP<strong>分组首部开销小</strong>，UDP首部8字节，TCP首部20字节。</li>
+<li>UCP<strong>没有拥塞控制</strong>，应用层可以更好地控制要发送的数据和发送时间。</li>
+<li>UCP提供尽<strong>最大努力的交付</strong>，但是不保证可靠交付。（维护可靠性的工作需要用户在应用层完成）</li>
+<li>UDP是面向报文的</li>
+<li>UDP常用于一次性传输比较少量的网络应用：DNS，SNMP等</li>
+</ul>
+<ol start="10">
+<li>TCP和UDP的区别？为什么三次握手和四次挥手？</li>
+</ol>
+<p>最主要的区别是：UDP不一定提供可靠传输</p>
+<p>三次握手和四次挥手的原因是：因为双方都建立了连接，所以双方都要释放自己的连接。</p>
+<ol start="11">
+<li>http的缓存机制</li>
+</ol>
+<p>浏览器第一次向一个服务器发起http请求后，服务器会返回资源，并在响应头中添加一些有关缓存的字段：<strong>cache-control</strong>， <strong>expires</strong>， <strong>last-modified</strong>， <strong>Date</strong>等。之后，浏览器再向该服务器请求资源时，就可以根据情况使用<strong>强缓存</strong>和<strong>协商缓存</strong>。</p>
+<p><em>强缓存</em>： 浏览器直接从本地获取数据而不与服务器进行交互。<br><em>协商缓存</em>：浏览器发送请求到服务器，服务器判断是否可以使用本地缓存。（判断请求间隔内内容是否发生变化、相关数据是否expire等）</p>
+<p>可以直接查看缓存是否过期，如果没有过期则直接使用；如果过期了，则向服务器请求查看该缓存是否发生过更新，是否可以继续使用。</p>
+<p><img src="assets/16413754752553.jpg" srcset="/img/loading.gif" lazyload></p>
+<ol start="12">
+<li>http 2.0 新特点</li>
+</ol>
+<ul>
+<li>基于https天然具有安全性</li>
+<li>二进制分帧层： 将所有传输的信息分割为更小的信息或帧，并进行<strong>二进制编码</strong> （http2.0性能增强的核心）</li>
+<li>允许多路复用：基于二进制来分帧层，在共享TCP连接的基础上，<strong>同时</strong>发送请求和响应。</li>
+</ul>
+<p>http消息 -&gt; 分解 -&gt; 独立的帧 -&gt; 交错发送 -&gt; 在另一端根据<strong>流ID</strong>和<strong>首部</strong>将他们重新组合。（不破坏消息语义）</p>
+<ul>
+<li>服务器推送： 服务端根据客户端的请求，提前返回多个响应，推送<strong>额外的资源</strong>给客户端，支持缓存。       </li>
+</ul>
+<ol start="13">
+<li>https的工作原理</li>
+</ol>
+<p>1&gt; 客户端通过URL发起https请求，要求服务器建立SSL链接<br>2&gt; 服务器收到客户端的请求后，返回<strong>公钥</strong>证书<br>3&gt; 客户端首先验证接收到的公钥证书是否有效，验证不通过则显示警告信息。验证有效的话，客户端利用伪随机数生成器<strong>生成会话密钥</strong>，然后使用<strong>公钥</strong>来加密并发送给服务器。<br>4&gt; 服务器端利用自己的私钥来解密并获得会话密钥，这样服务器和客户端都持有了相同的会话密钥。<br>5&gt; 服务器和客户端的通信都使用<strong>会话密钥</strong>来加密。</p>
+<p><em>client随机生成一个会话密钥并用公钥加密，server使用私钥解密后获得会话密钥，从此所有对话都用会话密钥加密。并不是每一次对话都要使用公钥和私钥加密和解密，而是只使用会话密钥。</em></p>
+<p><strong>https其实只是借用SSL加密传输了会话密钥，之后服务器与客户端直接的通信都为对称加密（只使用会话密钥）。</strong></p>
+<ul>
+<li>非对称加密用于握手过程中<strong>加密生成的密码</strong>即会话密钥（更安全）</li>
+<li>对称加密用于对真正传输的数据进行加密（速度更快） -&gt; https中的会话密钥</li>
+</ul>
+<ol start="14">
+<li>https 的优点和缺点</li>
+</ol>
+<p>优点： 能够进行<strong>信息加密</strong>，<strong>完整性校验</strong>和<strong>身份验证</strong>。很大程度上避免了<strong>信息窃听</strong>，<strong>信息篡改</strong>和<strong>信息劫持</strong>。</p>
+<p>缺点： 握手阶段比较费时，会让页面的加载时间变长。</p>
+<ul>
+<li>https的缓存不如http的高效，会<strong>增加数据开销</strong>。</li>
+<li>SSL证书需要额外费用，功能越强大的证书费用越高（<strong>成本高</strong>）。</li>
+<li>SSL证书<strong>需要绑定IP</strong>，不能在同一IP绑定多个域名，ipv4资源支持不了这种消耗。</li>
+</ul>
+<p><em>ipv4和ipv6分别是干嘛的？</em></p>
+<ol start="15">
+<li>http和https的区别</li>
+</ol>
+<p>http：超文本传输协议，TCP协议的一种（建立TCP连接后才能发送http请求），是用于从www服务器传输超文本到本地浏览器的一种协议。<em>是建立在TCP协议上的一种应用。</em></p>
+<p>https： http+ssl，是http的安全版本，加入SSL层实现了<strong>加密传输</strong>和<strong>身份认证</strong>。</p>
+<p>区别：</p>
+<ul>
+<li>http传输的数据是未加密的，即明文传输;而https是具有安全性的SSL加密传输</li>
+<li>https需要使用SSL证书；http不需要</li>
+<li>端口号不同：http用的是80端口，https用的是443端口</li>
+<li>https基于传输层；http基于应用层</li>
+</ul>
+<p><em>应用层 -&gt; 表示层 -&gt; 会话层 -&gt; 传输层 -&gt; 网络层 -&gt; 数据链路层 -&gt; 物理层</em></p>
+<ol start="16">
+<li>什么是URL</li>
+</ol>
+<p>URL指的是<strong>统一资源定位符</strong>：一个给定的独特资源在web上的网址</p>
+<p>组成部分： </p>
+<ul>
+<li>protocol: 协议，表明浏览器将使用何种协议</li>
+<li>domain: 域名，表示正在请求哪个服务器</li>
+<li>port： 端口</li>
+<li>path： 网络资源的路径</li>
+<li>parameters： 提供给网络服务器的额外参数</li>
+<li>anchor： 资源本身的一部分“锚点”，表示资源的一种“书签”</li>
+</ul>
+<ol start="17">
+<li>什么是BOM？有哪些常用的BOM对象及其属性？</li>
+</ol>
+<p>BOM是<strong>浏览器对象</strong>。 </p>
+<ul>
+<li>location对象： 用于获取或设置窗体的URL，并且可以用于解析URL</li>
+<li>history对象： 记录用户曾经浏览过的页面（URL），并可以实现浏览器的前进与后退等相似的导航功能</li>
+<li>navigator对象： 包含有关浏览器的信息，通常用于<strong>检测浏览器与操作系统的版本</strong>。</li>
+</ul>
+<ol start="18">
+<li>cookie的作用</li>
+</ol>
+<ul>
+<li>保存用户的登录状态： 一段时间内免登录</li>
+<li>跟踪用户行为： 天气预报中保存用户访问所在的地区</li>
+</ul>
+<ol start="19">
+<li>cookie之中有哪些字段可以设置？</li>
+</ol>
+<ul>
+<li>name: cookie的名称</li>
+<li>value： cookie的值（文本数据）</li>
+<li>path： 可以访问此cookie的页面路径</li>
+<li>domain： 可以访问此cookie的域名</li>
+<li>expires/max-age： cookie的过期时间</li>
+<li>httpOnly：true的情况下，只有在http请求头中会带有此cookie，而无法通过js脚本直接访问  </li>
+<li>secure: 是否只能通过https协议来传递这条cookie</li>
+</ul>
+<ol start="20">
+<li>cookie和session的共同点和区别</li>
+</ol>
+<p>共同点： 都是用来跟踪浏览器用户身份的会话方式</p>
+<p>区别： </p>
+<ul>
+<li>session是服务器端保持状态的方案，cookie是客户端保持状态的方案</li>
+<li>cookie保存在客户端本地(浏览器上)，客户端请求服务器时会<strong>将cookie一并提交</strong>；session保存在服务端，通过<strong>检索sessionId来查看状态</strong>。  </li>
+</ul>
+<p><em>保存sessionid的方式可以采用cookie，如果cookie被禁用，则可以使用URL重写机制（把会话ID保存在URL中）</em></p>
+<ul>
+<li>单个cookie不能超过4kb，很多浏览器限制一个站点最多保存20个cookie（session可以保存更多，还可以存储更加复杂的数据类型）</li>
+<li>cookie相较于session不是很安全，别人可以通过分析本地的cookie进行cookie欺骗</li>
+<li>session会在一定时间内保存在服务器上，当访问增多时服务器的性能也会被占用。考虑到性能（成本、性价比），可以采用cookie。</li>
+</ul>
+<ol start="21">
+<li>cookie， localStorage， sessionStorage的共同点和区别</li>
+</ol>
+<p>共同点： 都是前端<strong>本地存储</strong>的方式，均保存在<strong>浏览器端</strong>且<strong>同源</strong>。  </p>
+<p><em>同源：指的是协议，域名，端口相同。不同源的客户端脚本，在没有明确授权的情况下，不能读写对方的资源。</em></p>
+<p>区别： </p>
+<ul>
+<li>数据和服务器之间的交互方式：<ul>
+<li>cookie可以在客户端和服务器之间来回传递  </li>
+<li>localStorage和seesionStorage不会主动地把数据发送给服务器，而是仅在本地保存  </li>
+</ul>
+</li>
+<li>生命周期：<ul>
+<li>cookie在设置的有效期到期前均有效  </li>
+<li>sessionStorage默认<strong>关闭浏览器后失效</strong></li>
+<li>localStorage除非被手动清除，否则始终有效，永久保存</li>
+</ul>
+</li>
+<li>存放数据大小：<ul>
+<li>cookie的存储容量较小，一般只有4kb</li>
+<li>localStorage和sessionStorage可以最多保存5Mb的信息</li>
+</ul>
+</li>
+<li>作用域：<ul>
+<li>cookie和localStorage在所有同源窗口都是共享的</li>
+<li>sessionStorage在不同的浏览器窗口不共享</li>
+</ul>
+</li>
+</ul>
+<ol start="22">
+<li>CSRF和XSS攻击以及防御手段</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>方式</th>
+<th>防御手段</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>XSS（跨站脚本攻击）</td>
+<td>攻击者在页面中<strong>嵌入恶意JS脚本</strong>，当用户浏览该页面时攻击。</td>
+<td>cookie设置httpOnly和secure（使用https)； 进行特殊字符过滤；对用户的输入进行检查</td>
+</tr>
+<tr>
+<td>CSRF（跨站请求伪造）</td>
+<td>攻击者<strong>户身份，以用</strong>，以用户名义发送恶意请求</td>
+<td>使用验证码；检查https头部refer字段</td>
+</tr>
+</tbody></table>
+<ol start="23">
+<li>cookie如何防范XSS攻击</li>
+</ol>
+<p>在http头部配上set-cookie，其中：</p>
+<ul>
+<li>httpOnly会禁止JS脚本使用document以及访问cookie</li>
+<li>secure会要求浏览器仅在使用https协议时才发送cookie</li>
+</ul>
+<ol start="24">
+<li>浏览器在生成页面时会生成那两棵树？</li>
+</ol>
+<p>会生成<strong>DOM树</strong>和<strong>CSSOM规则树</strong>。</p>
+<p>DOM树：当浏览器接收到服务器返回的html文档后，会遍历文档节点，并生成DOM树。<br>CSSOM树：浏览器解析相应的CSS文件生成。</p>
+<ol start="25">
+<li>前端优化以及web性能优化的思路</li>
+</ol>
+<ul>
+<li>降低请求量：合并资源、减少http请求数量、gzip压缩</li>
+<li>加快请求速度： 减少域名数、<strong>并行加载</strong>、<strong>预解析DNS</strong> </li>
+<li>缓存：http缓存机制、离线数据缓存localStorage</li>
+<li>渲染：使用外部JS和CSS文件、加载顺序（将css样式表放在顶端，js脚本放底端，使用<code>&lt;link&gt;</code>不使用<code>@import</code>）、图片懒加载</li>
+<li>server方面：使用<code>CDN</code>，配置<code>ETag</code>，对组件使用<code>gzip压缩</code></li>
+<li>cookie方面：减小cookie大小</li>
+<li>javascript方面：脚本放底端，将javascript和css从外部引用，压缩javascript和css，删除不需要的脚本，减少DOM访问</li>
+</ul>
+<p><em>并行加载：下载并执行脚本的同时，渲染页面，分析相应的html以及css文件（使用LABjs库可以很好地实现）</em><br><em>DNS预解析：根据浏览器定义的规则，提前解析之后可能会遇到的域名，使解析结果提前缓存到系统缓存中来缩短DNS解析时间，提高网站的访问速度。</em></p>
+<h3 id="你有用过哪些前端性能优化的方法？"><a href="#你有用过哪些前端性能优化的方法？" class="headerlink" title="你有用过哪些前端性能优化的方法？"></a>你有用过哪些前端性能优化的方法？</h3><ul>
+<li>减少http请求次数：CSS Sprites、JS和CSS源码压缩、图片大小控制合适；网页gzip，CDN托管，data缓存，图片服务器</li>
+<li>前端模版JS+数据，减少由于HTML标签导致的<strong>带宽浪费</strong>，前端用变量保存Ajax请求结果，每次操作本地变量，不用请求，减少请求次数</li>
+<li>用<strong>innerHTML</strong>代替DOM操作，减少DOM操作次数，优化javascript性能</li>
+<li>当需要设置的样式很多时，设置className而不是直接操作style</li>
+<li><strong>少用全局变量</strong>，缓存DOM节点查找的结果，减少IO读取操作</li>
+<li>避免使用CSS Expression（css表达式），又称Dynamic properties（动态属性）</li>
+<li>图片预加载，将样式表放在顶部，将脚本放在底部，加上时间戳（为什么要加时间戳？）</li>
+<li>避免在页面的主体布局中使用<code>table</code>，因为table要等其中的所有内容完全下载之后才会显示出来，显示速度要比dic+css布局慢很多</li>
+</ul>
+<h3 id="谈谈性能优化问题"><a href="#谈谈性能优化问题" class="headerlink" title="谈谈性能优化问题"></a>谈谈性能优化问题</h3><ul>
+<li>代码层面：避免使用css表达式，避免使用<strong>高级选择器</strong>，<strong>通配选择器</strong></li>
+<li>缓存利用：<strong>缓存Ajax</strong>，使用CDN，<strong>使用外部js和css文件以便缓存</strong>，<strong>添加Expires头</strong>，<strong>服务端配置Etag</strong>，减少DNS查找等</li>
+<li>请求数量：合并样式和脚本，使用<strong>CSS图片精灵</strong>，初始首屏之外的图片资源按需加载，静态资源延迟加载</li>
+<li>请求带宽：压缩文件，开启gzip</li>
+</ul>
+<h3 id="前端性能优化的最佳实践？"><a href="#前端性能优化的最佳实践？" class="headerlink" title="前端性能优化的最佳实践？"></a>前端性能优化的最佳实践？</h3><ul>
+<li>性能评级工具（PageSpeed或YSlow）</li>
+<li>合理设置HTTP缓存：Expires与Cache-control</li>
+<li>静态资源打包，开启gzip压缩（节省响应流量）</li>
+<li>CSS3模拟图像，图标base64（降低请求数）</li>
+<li>模块延迟（defer）加载，异步（async）加载</li>
+<li>Cookie隔离（节省请求流量）</li>
+<li>localStorage（本地存储）</li>
+<li>使用CDN加速（访问最近服务器）</li>
+<li>启用http/2（多路复用，并行加载）</li>
+<li>前端自动化（gulp/webpack）</li>
+</ul>
+<ol start="26">
+<li>什么是重排/回流（reflow）和重绘（repaint）？什么情况会引起重排重绘？如何减少重排重绘？</li>
+</ol>
+<ul>
+<li><p>重排和重绘</p>
+<ul>
+<li>重排：<strong>部分或整个渲染树</strong>需要重新分析并且节点尺寸需要重新计算</li>
+<li>重绘：由于节点的几何属性发生改变或者<strong>样式发生改变</strong>，屏幕上的<strong>部分内容</strong>需要更新</li>
+</ul>
+</li>
+<li><p>引起重排和重绘的原因</p>
+<ul>
+<li>浏览器初始化窗口</li>
+<li>添加或删除可视的DOM元素</li>
+<li>移动或者给页面中的DOM节点添加动画</li>
+<li>添加一个样式表，调整样式属性</li>
+<li>用户行为：如调整窗口大小（重绘）、改变字号、滚动等</li>
+</ul>
+</li>
+<li><p><em>重绘不一定需要重排，重排一定导致重绘。</em>*</p>
+</li>
+<li><p>减少重排重绘的方法：</p>
+<ul>
+<li><strong>批量改变和表现DOM</strong>: 1.复制即将更新的节点在副本上操作，然后将旧的节点与新的节点交换 2.通过<code>diplay：none</code>属性隐藏元素，在添加足够多的变更之后，再通过display属性显示（只触发两次重排重绘）</li>
+<li>使用cssText（动态改变），className（静态改变）一次性改变属性</li>
+<li>对于多次重排的元素比如动画，使用<strong>绝对定位</strong>使其脱离文档流，也就不再会影响其他的元素</li>
+</ul>
+</li>
+</ul>
+<ol start="27">
+<li>图片的懒加载和预加载</li>
+</ol>
+<ul>
+<li>预加载：提前加载图片，当用户需要时可以直接从本地缓存中渲染</li>
+<li>懒加载/延迟加载：访问页面时，先把图片替换成一张<strong>站位图</strong>，当图片出现在浏览器可视区域时，才显示真正的图片内容</li>
+</ul>
+<ol start="28">
+<li>什么是按需加载？</li>
+</ol>
+<p>用户触发了相应的动作才加载相关的功能。<br>触发的动作包括：鼠标点击，键盘输入，鼠标移动，拉动滚动条等。<br>加载的文件有：HTML，CSS，JS，图片等。</p>
+<ol start="29">
+<li>webSocket和Ajax的区别是什么？webSocket的应用场景有哪些？</li>
+</ol>
+<p><em>webSocket可以用来让服务器主动与客户端建立通信。</em></p>
+<ul>
+<li><p>webSocket的本质是解决<strong>http协议单向性</strong>的问题（请求必须有客户端向服务器发起，然后服务器响应）。服务器需要主动地向客户端发送消息时就会陷入困境，因为之前的tcp连接以及被释放，服务器根本找不到客户端。</p>
+</li>
+<li><p>webSocket借用了web的<strong>端口</strong>和<strong>消息头</strong>来创建连接，后续的数据传输和基于TCP的socket基本一样，但封装了更多的功能：</p>
+<ul>
+<li>原生支持wss安全访问（跟https共用端口和证书）</li>
+<li>创建连接时附带校验</li>
+<li>从数据帧中自动拆分消息包</li>
+</ul>
+</li>
+<li><p>websocket在双向传输、信息推送方面可以做到灵活、简便和高效。但是在普通的request-response模式下并无太大用武之地（比起普通的http请求复杂很多）。</p>
+</li>
+<li><p>websocket的优点：</p>
+<ul>
+<li><strong>原版socket连接后的身份验证被省略</strong>，websocket的url中可以携带身份验证参数，可以直接验证</li>
+<li>直接通过<strong>WSS加密</strong>，还可以保证证书的可信性</li>
+<li>原版socket需要自己定义数据格式（长度、标志、粘包、分包等），而<strong>websocket可以直接接收到完整的数据包</strong></li>
+<li>前端的<strong>nginx可以直接进行转发与负载均衡</strong>，部署简单</li>
+</ul>
+</li>
+</ul>
+<p><em>粘包：TCP为了提高传输效率，通常要求发送方在收集到足够多的数据再进行发送，如果发送方连续几次发送的数据都很少，则TCP会根据优化算法把这些数据包粘合在一起，也就形成了粘包。接收方也可以造成粘包现象：接收方用户进程未能及时地处理发送方的数据，在下一包数据到来之时上一包数据还未被提取，就会导致粘包现象的发生。</em></p>
+<p><em>分包： 如果发送的数据包太大，TCP有可能自动将其拆分成多个较小的包进行发送，接收端一次receive可能只能收到一部分数据。</em></p>
+<p>处理办法：每个数据包前加上长度字节，如果缓冲区的数据长度大于要提取的字节数，则只取出相应的字节，否则等待下一次数据接收（缓冲区数据长度小于需要提取的字节数）。</p>
+<p><em>nginx：是一个使用c语言开发的高性能的http服务器及反向代理服务器，可以实现高并发低CPU低消耗。nginx常用做静态内容服务和代理服务器。</em></p>
+<ol start="30">
+<li>TCP/IP的网络模型</li>
+</ol>
+<ul>
+<li>TCP/IP是一系列网络协议的总称，其目的是使得计算机之间可以进行信息交换</li>
+<li>TCP/IP模型四层架构从上到下是：应用层 -&gt; 传输层 -&gt; 网络层 -&gt; 链路层</li>
+<li><strong>应用层</strong>负责传输各种最终形态的数据，直接与用户信息交互，主要协议是<strong>http，ftp</strong>等。</li>
+<li><strong>传输层</strong>负责传输文本数据，主要协议是<strong>TCP协议</strong></li>
+<li><strong>网络层</strong>负责分配地址和传输二进制数据，主要协议是<strong>IP协议</strong></li>
+<li>链路层负责建立电路连接，是整个网络的物理基础，典型的协议包括<strong>以太网</strong>、ADSL等</li>
+</ul>
+<ol start="31">
+<li>跨域方式，jsonp具体流程，如何实现jsonp封装、优化？</li>
+</ol>
+<ul>
+<li>JSONP，全称“json with padding”,用于解决老版本浏览器跨域数据访问的问题。原理是web页面调用js文件不受浏览器同源策略限制，所以通过<strong>script标签</strong>可进行跨域请求：<ul>
+<li>首先前端设置好<strong>回调参数</strong>，并将其作为URL的参数</li>
+<li>服务器收到请求后，通过该参数获取到回调函数后，并将数据放在参数中返回</li>
+<li>收到结果后，因为是script标签，所以浏览器将其当作脚本运行</li>
+</ul>
+</li>
+<li><strong>CORS</strong>，全称“跨源资源共享”，允许浏览器向跨源服务器发出XML，http request请求，**从而克服了Ajax只能同源使用的特点(可以发送请求，但是不能正常返回数据)**。<ul>
+<li>实现CORS的关键是服务器，只要服务器实现了CORS端口，就可以实现跨域通信</li>
+<li>CORS使用简单，支持POST方式，但是<strong>存在兼容问题</strong></li>
+<li>服务器的相关细节主要关于 Access-Control-Allow-Origin是否包含请求页面的域名。如果不包含的话，浏览器将认为这是一次失败的异步请求，将会调用xhr.onerror中的函数</li>
+<li>浏览器将cors请求分为两类，简单请求和非简单请求：<ul>
+<li>简单请求：浏览器直接发出cors请求，就是在头信息之中增加一个origin字段，用于说明本次请求来自哪个协议，域名，端口。服务器根据这个值，决定是否同意本次请求，如果服务器同意，就会返回相应字段。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ol start="32">
+<li>如何生成token，怎么传递token？</li>
+</ol>
+<p>有些接口需要用户登录，有些接口不需要用户登录，基于这些特征，移动端与服务端之间的通信需要两个token：针对接口的token（<strong>api_token</strong>）和针对用户的token（<strong>user_token</strong>）</p>
+<ul>
+<li>Api_token负责保证接口访问的<strong>隐蔽性</strong>和<strong>有效性</strong></li>
+</ul>
+<p><code>http://blog.snsgou.com/模块名/控制器名/方法名？参数名=参数值&amp;...</code></p>
+<p>token的生成规则参考如下：<br>api_token = md5(‘模块名’+’控制器名’+’方法名’+’2017-07-18’+’加密密钥’)</p>
+<p>加密密钥：为私有的加密密钥，客户端在服务器注册了一个账号之后，服务器会为这个客户分配一个账号和一个密码，之后服务器根据客户端传过来的id查找到对应的secret，然后利用这个secreat自己生成一份token并将其与客户端传来的token进行比对。如果验证通过，则传递需要的数据给客户端。</p>
+<ul>
+<li>User_token：保护用户的用户名和密码的多次提交，防止密码泄漏。<ul>
+<li>用户使用账号密码完成登录操作</li>
+<li>登录成功之后，服务器返回一个user_token让客户端自己储存</li>
+<li>之后每次客户端请求接口时，都会将其user_id以及user_token传回给服务器</li>
+<li>服务器进行验证以及查看token是否过期，验证成功则提供服务</li>
+</ul>
+</li>
+</ul>
+<ol start="33">
+<li>http和https</li>
+</ol>
+<ul>
+<li>https的加密是在传输层实现的</li>
+<li>http使用80端口，https使用443端口</li>
+<li>http连接是<strong>无状态</strong>的；https可以进行身份认证、加密传输</li>
+<li>https协议的缺点：<ul>
+<li>握手阶段较为费时，延长页面加载时间</li>
+<li>https缓存不如http高效，会增加开销</li>
+<li>SSL证书需要绑定ip，一个ip只能绑一个，ipv4无法支持这种消耗</li>
+</ul>
+</li>
+</ul>
+<ol start="34">
+<li>TCP和UDP的区别</li>
+</ol>
+<ul>
+<li>TCP面向连接；UDP是无连接的（发送数据前并不需要建立连接，就是单方面地发送数据）</li>
+<li>TCP提供可靠的服务：无差错，不重复，不丢失，<strong>按序到达</strong>（适合大量的数据交换）；UDP只能保证最大努力交付（最大数量交付），但不保证可靠交付</li>
+<li>TCP面向字节流；UDP面向报文（即使出现网络拥塞，也不会降低速率，但会丢包）</li>
+<li>TCP只能一对一；UDP支持一对一，一对多</li>
+<li>TCP的首部较大，为20字节；UDP首部较小，只有8字节</li>
+<li>TCP是面向连接的可靠性传输；UDP不可靠</li>
+</ul>
+<ol start="35">
+<li>webSocket的实现和应用</li>
+</ol>
+<ul>
+<li>webSocket是HTML5中的协议，支持<strong>持久连续的连接</strong>，而http协议不支持持久连接。其中http1.0中的keep-alive只是将多个http请求合并为一个。</li>
+<li>http的生命周期由request来界定，一个request一个response。webSocket是基于http协议的，只需要一次http握手（client申请使用webSocket，server作出回复），避免了http的非状态性。</li>
+</ul>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><code class="hljs avrasm">客户端请求代码：<br><br>GET /chat HTTP/<span class="hljs-number">1.1</span><br><span class="hljs-symbol">Host:</span> server.example.com<br><span class="hljs-symbol">Upgrade:</span> websocket                 //告诉服务器想要发起的协议类型<br><span class="hljs-symbol">Connection:</span> Upgrade<br><span class="hljs-keyword">Sec</span>-WebSocket-Key: x3JJASLKDJIOQWDNLKCJXALKJ==<br><span class="hljs-keyword">Sec</span>-WebSocket-Protocol: chat, superchat<br><span class="hljs-keyword">Sec</span>-WebSocket-Version: <span class="hljs-number">13</span><br><span class="hljs-symbol">Origin:</span> http://example.com<br><br>服务器应答：<br><br>HTTP/<span class="hljs-number">1.1</span> <span class="hljs-number">101</span> Switching Protocols<br><br><span class="hljs-symbol">Upgrade:</span> websocket<br><br><span class="hljs-symbol">Connection:</span> Upgrade<br><br><span class="hljs-keyword">Sec</span>-WebSocket-Accept: KSAJDLKAJSDOIAJSDOIJ=  //采用和客户端一致的密钥计算出来的<br></code></pre></td></tr></table></figure>
+<p>延伸知识：</p>
+<ul>
+<li>Ajax轮询：让浏览器每隔几秒就发送一次请求，询问服务器是否有更新</li>
+<li>long pull：采用轮询的方式，但是采用的是阻塞模型；客户端与服务器建立连接，如果服务器没有消息，就一直不返回response。</li>
+</ul>
+<p>原理都是：http协议在nginx等服务器的解析之后，再传送给对应的handler去处理请求。nginx是反应极为迅速的<strong>接线员</strong>，handler可以理解为<strong>客服</strong>。在Ajax轮询和long pull模式下，都是nginx服务器反应迅速，handler处理太慢，导致了handler供不应求（客服太少），从而导致503（server unavailable）</p>
+<h3 id="在webSocket中，用户直接与nginx（接线员）建立持久连接，当服务器有更新时，handler（客服）会交给nginx，然后nginx统一发送给客户。"><a href="#在webSocket中，用户直接与nginx（接线员）建立持久连接，当服务器有更新时，handler（客服）会交给nginx，然后nginx统一发送给客户。" class="headerlink" title="在webSocket中，用户直接与nginx（接线员）建立持久连接，当服务器有更新时，handler（客服）会交给nginx，然后nginx统一发送给客户。"></a>在webSocket中，用户直接与nginx（接线员）建立持久连接，当服务器有更新时，handler（客服）会交给nginx，然后nginx统一发送给客户。</h3><p>Client &lt;——&gt; Nginx &lt;——&gt; handler</p>
+<h3 id="webSocket的特点："><a href="#webSocket的特点：" class="headerlink" title="webSocket的特点："></a>webSocket的特点：</h3><ul>
+<li>建立在TCP协议上，服务端实现相对容易</li>
+<li>与http协议<strong>有良好的兼容性</strong>，默认端口是80和443；<strong>握手阶段采用http协议</strong>，因此握手时不容易被屏蔽，能通过各种http代理服务器</li>
+<li><strong>数据格式轻量</strong>，<strong>性能开销小</strong>，<strong>通信高效</strong></li>
+<li>可以发送文本，也可以发送二进制数据</li>
+<li><strong>没有同源限制</strong>，客户端可以与任意服务器进行通信</li>
+<li>协议标识符为WS(如果加密，则为WSS)</li>
+</ul>
+<ol start="36">
+<li>http请求方式，head方式</li>
+</ol>
+<p>head：类似于get请求，只不过返回的<strong>响应中没有具体内容</strong>（可以用来测试超链接的有效性）<br>options：允许客户端查看服务器性能，比如服务器支持的请求方式</p>
+<ol start="37">
+<li>如何实现访问一个图片的url后直接下载该图片</li>
+</ol>
+<p>需要服务端在请求头下做处理（OSS技术）<br>ex: x-oss-objective, x-oss-request-id, x-oss-storage-class</p>
+<ol start="38">
+<li>html5的关于drag的api</li>
+</ol>
+<ul>
+<li>ondragstart：源对象开始被拖动</li>
+<li>ondrag：源对象被拖动的过程中</li>
+<li>ondragend：源对象被拖动结束</li>
+<li>ondragenter：目标对象被源对象拖动进入</li>
+<li>ondragover：目标对象被源对象悬浮在上面</li>
+<li>ondragleave：源对象被拖动离开目标对象</li>
+<li>ondrop：拖动源对象并在目标对象上方松手</li>
+</ul>
+<ol start="39">
+<li>http2.0特点</li>
+</ol>
+<ul>
+<li>提升访问速度：请求资源所需时间更少，访问速度更快</li>
+<li>允许多路复用：允许同时通过单一的http2.0发送多个请求/响应信息</li>
+<li>二进制分帧：将所有的传输信息分割为更小的信息或帧，并对他们进行二进制编码</li>
+<li>头部压缩：http的请求和响应分为：<strong>状态行</strong>、<strong>请求/响应头部</strong>和<strong>消息主体</strong>。一般消息主体都会经过gzip的压缩，但是状态行和请求/响应头部时<strong>没有经过任何压缩</strong>的。随着web发展，头部越来越复杂。http2.0就提出使用<strong>HAPCK</strong>技术压缩头部。</li>
+<li>服务器端推送：如果需要什么额外脚本，浏览器不需要自己去下载，服务器直接发送到客户端，大大提升渲染速度。</li>
+</ul>
+<ol start="40">
+<li>400，401，403状态码</li>
+</ol>
+<ul>
+<li>400状态码：<strong>请求无效</strong><ul>
+<li>产生原因：前端提交的字段名称、数据类型与后台的服务没有保持一致</li>
+<li>解决方法：对照后端服务保持一致性（将obj对象通过JSON.stringfy实现序列化）</li>
+</ul>
+</li>
+<li>401状态码：当前请求<strong>需要用户验证</strong></li>
+<li>403状态码：服务器收到请求，但<strong>拒绝执行</strong></li>
+</ul>
+<ol start="41">
+<li>fetch发送两次请求的原因<br>第一次发送收到204（no content），第二次才成功。<br>原因：使用fetch的post请求时，第一次发送的是options请求，询问服务器是否支持修改的请求头，如果支持，则在第二次中发送真正的请求。</li>
+<li>web worker介绍</li>
+</ol>
+<ul>
+<li>web worker的作用，主要就是为javascript创造<strong>多线程环境</strong>，允许主线程创建worker线程并将一些任务分配给后者运行。在主线程运行的同时，worker线程在后台运行，两者互不干扰，等到worker线程完成分配的计算任务，再把结果返回给主线程。</li>
+<li>worker线程一旦新建成功，就会始终运行，不会被主线程上的活动打断，有利于随时响应主线程。</li>
+<li>worker比较耗费资源，不应该过度使用；一旦使用完毕，就应该关闭</li>
+</ul>
+<p>web worker的一些注意点：</p>
+<ul>
+<li><strong>同源限制</strong>：分配给worker线程运行的脚本文件，必须与主线程的脚本文件同源</li>
+<li><strong>DOM限制</strong>：worker线程的全局对象与主线程的不一样，无法使用主线程所在的网页的<strong>DOM对象</strong>以及<strong>document，window，parent等对象</strong>。但是<strong>可以使用navigator对象和location对象</strong>。</li>
+<li><strong>通信限制</strong>：web worker线程与主线程不在同一个上下文环境，不能直接通信，所以必须通过<strong>消息</strong>完成。</li>
+<li><strong>脚本限制</strong>：worker线程不能执行<strong>alert</strong>（）方法和<strong>confirm</strong>（）方法，但是可以通过使用xmlHttpRequest对象发出Ajax请求</li>
+<li><strong>文件限制</strong>：worker线程<strong>不能读取本地文件</strong>，它所加载的脚本，必须来自网络</li>
+</ul>
+<h3 id="创建Web-Worker线程："><a href="#创建Web-Worker线程：" class="headerlink" title="创建Web Worker线程："></a>创建Web Worker线程：</h3><figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs haxe"><span class="hljs-keyword">var</span> worker = <span class="hljs-keyword">new</span> <span class="hljs-type">Worker</span>(<span class="hljs-string">&#x27;worker.js&#x27;</span>) <span class="hljs-comment">//执行的脚本文件必须来自网络 </span><br></code></pre></td></tr></table></figure>
+<h3 id="主线程给worker发消息："><a href="#主线程给worker发消息：" class="headerlink" title="主线程给worker发消息："></a>主线程给worker发消息：</h3><figure class="highlight ocaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs ocaml">worker.postMessage(<span class="hljs-symbol">&#x27;hello</span> worker&#x27;);<br>worker.postMessage(&#123;<br>    <span class="hljs-keyword">method</span>:<span class="hljs-symbol">&#x27;echo&#x27;</span>,<br>    args:[<span class="hljs-symbol">&#x27;work&#x27;</span>]<br>&#125;);<br></code></pre></td></tr></table></figure>
+<h3 id="主线程通过监听函数，接收子线程发回来的消息"><a href="#主线程通过监听函数，接收子线程发回来的消息" class="headerlink" title="主线程通过监听函数，接收子线程发回来的消息"></a>主线程通过监听函数，接收子线程发回来的消息</h3><figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs reasonml">worker.onmessage = <span class="hljs-keyword">function</span>(event)&#123;<br>    console.log(&#x27;Received message&#x27; + event.data);<br>    <span class="hljs-keyword">do</span><span class="hljs-constructor">SomeThing()</span>;<br><br>&#125;<br><span class="hljs-keyword">function</span> <span class="hljs-keyword">do</span><span class="hljs-constructor">Something()</span>&#123;<br>    worker.post<span class="hljs-constructor">Message(&#x27;<span class="hljs-params">work</span> <span class="hljs-params">done</span>!&#x27;)</span>;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="主线程关闭worker线程"><a href="#主线程关闭worker线程" class="headerlink" title="主线程关闭worker线程"></a>主线程关闭worker线程</h3><p><code>worker.terminate();</code></p>
+<h3 id="worker线程内部监听函数，监听message事件"><a href="#worker线程内部监听函数，监听message事件" class="headerlink" title="worker线程内部监听函数，监听message事件"></a>worker线程内部监听函数，监听message事件</h3><figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs reasonml">self.add<span class="hljs-constructor">EventListener(&#x27;<span class="hljs-params">message</span>&#x27;, <span class="hljs-params">function</span>(<span class="hljs-params">e</span>)</span>&#123;<br>    self.post<span class="hljs-constructor">Message(&#x27;You <span class="hljs-params">said</span>: &#x27;+ <span class="hljs-params">e</span>.<span class="hljs-params">data</span>)</span>;<br>&#125;,<span class="hljs-literal">false</span>);<br></code></pre></td></tr></table></figure>
+<p>除了使用self.addEventListener(),还可以使用<code>self.onmessage()</code>来监听信息。<br><code>self.postMessage</code>:用来向主线程发送消息。<br><code>self.close()</code>:worker自己终结自己。</p>
+<h3 id="worker的构造函数："><a href="#worker的构造函数：" class="headerlink" title="worker的构造函数："></a>worker的构造函数：</h3><p>可以接受两个参数，第一个参数是<strong>脚本的网址</strong>（必须遵守同源政策），第二个参数是<strong>配置对象</strong>,该对象可选。它的作用之一是指定这个worker的名称。  </p>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs reasonml">var initWorker = <span class="hljs-keyword">new</span> <span class="hljs-constructor">Worker(&#x27;<span class="hljs-params">example</span>.<span class="hljs-params">js</span>&#x27;, &#123;<span class="hljs-params">name</span>:<span class="hljs-params">chaseWorker</span>&#125;)</span>;<br><br>使用 self.name 来获得worker的名字<br></code></pre></td></tr></table></figure>
+<p>web worker使用js文件时，主要先嵌入网页脚本，然后将其转化为一个<strong>二进制对象</strong>，然后为这个二进制文件<strong>生成url</strong>，最后worker加载<code>worker(&#39;url&#39;, &#123;name:&#39;exampleWorker&#39;&#125;)</code>。</p>
+<h3 id="主线程API："><a href="#主线程API：" class="headerlink" title="主线程API："></a>主线程API：</h3><ul>
+<li>Worker.onerror: 指定 error 事件的监听函数。</li>
+<li>Worker.onmessage: 指定 message 事件的监听函数，发送过来的数据在 event.data 中。</li>
+<li>Worker.onmessageerror: 指定 messageerror 事件的监听函数。发送的数据<strong>无法序列化成字符串时</strong>，会触发这个事件。</li>
+<li>Worker.putMessage():向Worker线程发送消息。</li>
+<li>Worker.terminate（）:立即终止worker线程。</li>
+</ul>
+<h3 id="web-worker线程API："><a href="#web-worker线程API：" class="headerlink" title="web worker线程API："></a>web worker线程API：</h3><ul>
+<li>self.name: worker的名字，该属性只读，在构造函数中被初始化，无法通过赋值更改。</li>
+<li>self.onmessage: 指定message事件的监听函数。</li>
+<li>self.onmessageerror: 指定 messageerror 事件的监听函数。当发送的消息无法序列化成字符串时，会触发这个事件。</li>
+<li>self.close()： 关闭worker线程。</li>
+<li>self.postMessage(): 向主线程发送消息。</li>
+<li>self.importScripts(): 加载js脚本（需遵守与主线程同源的原则）</li>
+</ul>
+<ol start="43">
+<li>HTML语义化标签</li>
+</ol>
+<p>HTML5语义化标签是指<strong>正确的标签包含了正确的内容</strong>，结构良好，便于阅读。例如nav表示导航栏，类似的还有article，header，footer等标签。 </p>
+<ol start="44">
+<li>iframe是什么？有什么缺点？</li>
+</ol>
+<p>定义： iframe元素会创建<strong>包含另外一个文档的内联框架</strong><br>提示： 可以将<strong>提示文字</strong>放在<code>&lt;iframe&gt;&lt;/iframe&gt;</code>之间，来区分某些不支持iframe的浏览器<br>缺点：* 会阻塞页面的onload事件<br>     * 搜索引擎无法解读这种页面，不利于SEO（什么是SEO）<br>     * iframe和主页面共享线程池，而浏览器对相同区域有限制所以会影响性能（什么限制）</p>
+<ol start="45">
+<li>Doctype的作用是什么？严格模式与混杂模式如何区分？</li>
+</ol>
+<p>Doctype声明于文档的最前面，他用来告诉浏览器以何种模式渲染页面，其中包括严格模式和混杂模式。</p>
+<p><strong>严格模式</strong>的排版和JS运作模式是以浏览器支持的最高标准运行的。<br><strong>混杂模式</strong>是让浏览器向后兼容，模拟老式浏览器，防止浏览器无法兼容页面。（Doctype不存在或者形式不正确会导致页面以混杂模式出现）</p>
+<p><em>区分严格模式和混杂模式有何意义？</em><br>如果只存在严格模式，那么许多旧网站必然受到影响，如果只存在混杂模式，那么就会回到当时浏览器大战时的混乱：每个浏览器都有自己的解析模式。</p>
+<ol start="46">
+<li>cookie如何防范XSS攻击</li>
+</ol>
+<p>定义：XSS（跨站脚本攻击）是指攻击者在返回HTML的报文中嵌入恶意javascript脚本<br>防御措施：在http头部配上， set-cookie： httponly-禁止JavaScript访问cookie，secure-仅在https协议下才传输cookie</p>
+<ol start="47">
+<li>RESTFUL</li>
+</ol>
+<p>概括：使用URL定位资源，用http描述操作</p>
+<ol start="48">
+<li>viewport（主要用于移动端开发）</li>
+</ol>
+<p>通俗而言，viewport就是设备屏幕上用来显示网页的那一块区域。一般而言，移动设备上的viewport都大于浏览器可视区域。<br>ex: </p>
+<figure class="highlight autohotkey"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><code class="hljs autohotkey"><span class="hljs-title">&lt;meta name=&#x27;viewpoint&#x27; content=&#x27;width:</span> device-width, init-scale = <span class="hljs-number">1.0</span>&#x27;/&gt;<br><span class="hljs-title">// width:</span> 用来设置viewport的宽度，为一个正整数，也可以设置为：&#x27;device-width&#x27;<br><span class="hljs-title">// device-width:</span> 设备宽度<br>// height： 设置viewport高度，一般设置了宽度，会自动解析出高度，可以不用设置<br>// initial-scale： 默认缩放比例（初始缩放比例），为一个数字，可以带小数<br>// minium-scale： 允许用户的最小缩放比例，为一个数字，可以带小数<br>// maximum-scale： 允许用户的最大缩放比例，为一个数字，可以带小数<br>// user-scalable： 是否允许手动缩放<br><br>```  <br>  <br>延伸问题：如何处理移动端`1px`被渲染成`2px`的问题？<br>* 局部处理<br>  + `meta`标签的`viewport`属性，`initial-scale`设置为`1`<br>  + `rem`按照设计稿标准走，外加利用`transfrome的scale（<span class="hljs-number">0.5</span>）`缩小一倍即可<br>* 全局处理<br>  + `meta`标签中的`viewport`属性，`initial-scale`设置为<span class="hljs-number">0.5</span><br>  + `rem`按照设计稿标准走即可（不懂这句话）<br><span class="hljs-number">49</span>. 如何解决click在iOS移动端游<span class="hljs-number">300</span>ms的延迟<br>* 方法一： 粗暴型：禁用<br>双击缩放是造成<span class="hljs-number">300</span>ms延迟的原因，那么只要禁用缩放就可以了。<br>`&lt;meta name=<span class="hljs-string">&quot;viewport&quot;</span> content=<span class="hljs-string">&quot;device-width,user-scalable=no&quot;</span>&gt;`<br>  <br>* 方法二： FastClick<br>  <br>在检测到touchend事件的时候，通过dom自定义事件立即触发一个模拟click的click事件，并把<span class="hljs-number">300</span>毫秒之后真正触发的click事件阻止掉。<br>  <br></code></pre></td></tr></table></figure>
+<p>window.addEventListener(“load”,function(){<br>    FastClick.attach(document.body);<br>},false);</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">50.</span> addEventListener参数<br><span class="hljs-code">`addEventListener(event, function,useCapture)`</span>  <br>其中，event指定事件名；function指事件触发时执行的函数；useCapture指事件是否在捕获或冒泡<br>阶段执行。<br><br><span class="hljs-bullet">51.</span> 什么是跨域？同源？同站？<br><span class="hljs-bullet">*</span> 跨域：是指一个URL的请求的<span class="hljs-strong">**协议**</span>、<span class="hljs-strong">**域名**</span>、<span class="hljs-strong">**端口**</span>三者之间任意一个与当前页面的URL不同。 <br><span class="hljs-bullet">*</span> 同源：是指两个页面具有相同的<span class="hljs-strong">**协议**</span>（http &amp; https），<span class="hljs-strong">**域名**</span>和<span class="hljs-strong">**端口号**</span>。<br>  <br><span class="hljs-emphasis">*不是同源就是跨域。*</span><br><br>![](assets/16418004575633.jpg)<br><br><br><span class="hljs-bullet">*</span> 同站：具有相同eTLD+1的网站被视为“同站”；反之，则为“跨站”。<br><br>![](assets/16418005227920.jpg)<br><br><span class="hljs-bullet">52.</span> 非同源限制<br><span class="hljs-bullet">*</span> 无法读取非同源网页的<span class="hljs-strong">**cookie**</span>，<span class="hljs-strong">**localStorage**</span>和<span class="hljs-strong">**IndexedDB**</span><br><span class="hljs-bullet">*</span> 无法接触非同源网页的<span class="hljs-strong">**DOM**</span> <br><span class="hljs-bullet">*</span> 无法向非同源地址<span class="hljs-strong">**发送Ajax请求**</span><br>  <br><span class="hljs-bullet">53.</span> 跨域解决方法<br><span class="hljs-bullet">*</span> 设置<span class="hljs-code">`document.domain`</span>解决无法读取非同源网页的cookie的问题<br>因为浏览器是通过document.domain属性来检查两个页面是否同源，因此只需要设置相同的<br><span class="hljs-code">`document.domain`</span>,两个页面就可以共享cookie（<span class="hljs-strong">**此方案仅限于主域相同，子域不同的跨域应用场景**</span>）<br></code></pre></td></tr></table></figure>
+<pre><code>document.domain = &quot;test.com&quot;
+//这样a.test.com和b.test.com可以互相使用资源
+</code></pre>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs markdown">  <br><span class="hljs-bullet">*</span> 跨文档通信API：<span class="hljs-code">`window.postMessage()`</span><br>调用postMessage方法实现父窗口http://test1.com向子窗口http://test2.com发送消息（子窗口同样可以使用此方法通信父窗口）  <br>可解决：<br><span class="hljs-bullet">    +</span> 页面与其打开的窗口之间的数据传递<br><span class="hljs-bullet">    +</span> 多窗口之间消息传递<br><span class="hljs-bullet">    +</span> 页面与嵌套的iframe消息传递<br><span class="hljs-bullet">    +</span> 以上三个场景的跨域消息传递<br>  <br>example:  <br></code></pre></td></tr></table></figure>
+<pre><code>//父窗口打开一个子窗口
+var openWindow = window.open(&#39;http://test2.com&#39;, &#39;title&#39;);
+  
+//父窗口向子窗口发消息（第一个参数代表发送的内容，第二个参数代表接受信息窗口的URL）
+openWindow.postMessage(&#39;Nice to meet you!&#39;, &#39;http://test2.com&#39;);
+</code></pre>
+<figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs cmake">  <br>调用<span class="hljs-keyword">message</span>事件，监听父窗口发送的消息<br><br></code></pre></td></tr></table></figure>
+<pre><code>window.addEventListener(&#39;message&#39;, function(e)&#123;
+    console.log(e.source);    // e.source指发送信息的窗口
+    console.log(e.origin);    // e.origin指发向的网址
+    console.log(e.data);      // e.data指发送的消息
+&#125;,false)
+</code></pre>
+<figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs livecodeserver">* JSONP<br>  <br>JSONP是服务器与客户端跨域通信的常用方法，最大的特点是简单适用，**兼容性好**（可以兼容低版本IE）。缺点是**只支持<span class="hljs-built_in">get</span>请求，不支持<span class="hljs-built_in">post</span>请求**。（<span class="hljs-built_in">get</span>请求数据存在<span class="hljs-built_in">URL</span>中，<span class="hljs-built_in">post</span>数据存在<span class="hljs-keyword">http</span>报文体中）。  <br>  <br>核心思想：网页通过添加一个`&lt;script&gt;`元素向服务器请求JSON数据，服务器收到请求后，将数据放在一个指定名字的回调函数的参数位置传递回来。<br><br><span class="hljs-comment">### 实现方法：</span><br>  + 原生实现<br><br></code></pre></td></tr></table></figure>
+<pre><code>&lt;script src=&quot;http://test.com/data.php?callback=dosomething&quot;&gt;&lt;/script&gt;
+// 向服务器test.com发出请求，该请求的查询字符串有一个callback参数，用来指定回调函数的名字。
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+    
+    function dosomething(res)&#123;
+        // 处理获得的数据
+        console.log(res.data)
+    &#125;
+&lt;/script&gt;
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><br><span class="hljs-bullet">+</span> jQuery Ajax<br><br></code></pre></td></tr></table></figure>
+    $.ajax(&#123;
+        url: &#39;http://www.test.com:8080/login&#39;,
+        type:&#39;get&#39;,
+        dataType:&#39;jsonp&#39;,               //请求方式为jsonp
+        jsonCallback:&quot;handleCallback&quot;,   //自定义回调函数名
+        data: &#123;&#125; 
+    &#125;);
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm">    <br>      <br>* CORS<br>  <br>CORS是跨域资源分享(Cross-<span class="hljs-keyword">Origin </span>Resource <span class="hljs-keyword">Sharing)的缩写，基于W3C标准，属于**跨源Ajax请求**的根本解决方法。</span><br><span class="hljs-keyword">+ </span>普通跨域请求：只需要服务器端设置“Access-Control-Allow-<span class="hljs-keyword">Origin”</span><br><span class="hljs-keyword">+ </span>带cookie的跨域请求：前后端都需要进行设置<br>  <br><span class="hljs-comment">### 前端设置：根据xhr.withCredential来判断是否携带cookie</span><br></code></pre></td></tr></table></figure>
+</code></pre>
+<p>//jQuery Ajax实现</p>
+<pre><code>$.ajax(&#123;
+    url:&#39;http://www.test.com:8080/login&#39;,
+    type: &#39;get&#39;,
+    data: &#123;&#125;,
+    xhrFields:&#123;
+        withCredential:true    //前端设置是否带cookie
+    &#125;,
+    crossDomain:true           //会让请求头中包含跨域的额外信息，但不包含cookie
+&#125;)
+  
+</code></pre>
+<p>//原生Ajax实现</p>
+<p>  var xhr = new XMLHttpRequest();</p>
+<p>  xhr.withCredentials = true;    //前端设置是否带cookie</p>
+<p>  xhr.open(‘post’,’<a target="_blank" rel="noopener" href="http://www.test.com:8080/login&#39;,true">http://www.test.com:8080/login&#39;,true</a>);<br>  xhr.setRequestHeader(‘Content-Type’, ‘application/x-www-form-urlencoded’);<br>  xhr.send(‘user=admin’);</p>
+<p>  xhr.onreadystatechange = function(){<br>    if(xhr.readyState == 4 &amp;&amp; xhr.status == 200){<br>        alert(xhr.responseText);<br>    }<br>  };</p>
+<figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs clean">### 服务器端设置：主要通过Access-Control-Allow-Origin来进行，如果浏览器检测到相关设置，则允许Ajax进行跨域的访问<br><br></code></pre></td></tr></table></figure>
+<p>req.addListener(‘end’,function(){<br>    postData = qs.parse(postData);</p>
+<pre><code>//跨域的后台设置
+res.writeHead(200,&#123;
+&#39;Access-Control-Allow-Credentials&#39;:&#39;true&#39;,  //后端允许发送cookie
+&#39;Access-Control-Allow-Origin&#39;: &#39;http://www.domain.com&#39;,  
+//允许访问的域（协议+域名+端口）
+&#39;Set-Cookie&#39;:&#39;l=a123456;Path=/;Domain=www.domain2.com;HttpOnly&#39;
+//httponly用来防御xss攻击（跨站脚本攻击）
+
+
+&#125;);
+</code></pre>
+<p>})</p>
+<figure class="highlight delphi"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs delphi"><br><span class="hljs-number">54</span>. iframe之间的通信（同源情况下和不同源情况下）<br>* 同源情况下：<br>  + 父iframe页面调用子iframe页面<br>    - 通过iframe的id直接获取子页面的dom -&gt; 然后通过内置属性**contentWindow**获得子窗口 window对象 <span class="hljs-comment">(**此方法兼容各个浏览器**)</span><br></code></pre></td></tr></table></figure>
+<pre><code>    document.getElementById(&#39;iframeId&#39;).contentWindow.func();
+    document.getElementById(&#39;iframeId&#39;).contentWindow.document.getElementById(&#39;子页面中的元素id&#39;);
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs asciidoc"><span class="hljs-bullet">- </span>通过iframe的name（名字），直接获取子窗口的<span class="hljs-strong">**window**</span>对象<br></code></pre></td></tr></table></figure>
+    iframeName.window.func();
+    iframeName.window.document.getElementById(&#39;子页面中的元素id&#39;);
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs stylus">- 通过window对象的frames<span class="hljs-selector-attr">[]</span>数组对象直接获取frame对象（window<span class="hljs-selector-class">.frames</span><span class="hljs-selector-attr">[0]</span>）<br></code></pre></td></tr></table></figure>
+    window.frames[0].func();
+    window.frames[0].document.getElementById(&#39;子页面中的元素id&#39;);
+    
+    //或者直接引用frame的名字
+    window.frames[&quot;iframeName&quot;].func();
+    window.frames[&quot;iframeName&quot;].document.getElementById(&#39;子页面中的元素id&#39;);
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs css"><br>+ 子<span class="hljs-selector-tag">iframe</span>页面调用父<span class="hljs-selector-tag">iframe</span>页面<br> - 通过parent方法<br></code></pre></td></tr></table></figure>
+    parent.window.func();
+    parent.window.document.getElementById(&#39;父页面中的元素ID&#39;);
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs asciidoc"><span class="hljs-bullet">- </span>通过top方法<br></code></pre></td></tr></table></figure>
+    top.window.func();
+    top.window.document.getElementById(&#39;父页面中的元素ID&#39;)
+<figure class="highlight xquery"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs xquery">+ 兄弟页面之间的相互调用<br>原理：在子页面中获取父页面（parent）或顶点页面（top）的<span class="hljs-keyword">window</span>元素，然后再根据兄弟iframe<span class="hljs-built_in">的name</span>或<span class="hljs-built_in">者id</span>获取兄弟iframe的<span class="hljs-keyword">window</span>对象。<br></code></pre></td></tr></table></figure>
+//1.通过兄弟iframe的id获取其dom，然后通过内置属性contentWindow取得window对象，此方法兼容各个浏览器
+parent.window.document.getElementById(&#39;iframe1Id&#39;).contentWindow.func();
+parent.window.document.getElementById(&#39;iframe1Id&#39;).contentWindow.getElementById(&#39;页面中的元素ID&#39;)
+
+//2.通过iframe的name（名字）直接获取子窗口的window对象
+parent.window.iframeName1.window.func();
+parent.window.iframeName1.window.getElementById(&#39;&#39;);
+
+//3. 通过window对象的frames[]数组对象直接获取子frame对象
+parent.window.frames[1].func();
+top.window.frames[1].document.getElementById(&#39;&#39;);
+</code></pre>
+  <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs markdown">  <br><span class="hljs-bullet">55.</span> 跨域情况下frame之间的通信：使用postMessage方法<br><span class="hljs-bullet">*</span> 父向子通信<br><span class="hljs-code">    </span><br><span class="hljs-code">main.html:</span><br><span class="hljs-code">  </span><br></code></pre></td></tr></table></figure>
+<script>
+    window.onload = function(){
+        document.getElementById('child')
+        .contentWindow.postMessage("主页面消息","xxxxxx")
+    }
+</script>
+<figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs avrasm">  <br><span class="hljs-symbol">child.html:</span><br>  <br></code></pre></td></tr></table></figure>
+<script>
+    window.addEventListener('message',function(event){
+        console.log(event);
+        document.getElementById('message').innerHtml="收到" +
+            event.origin + "消息：" + event.data; 
+    },false);
+</script>
+<figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs asciidoc"><span class="hljs-bullet">* </span>子向父通信 <br><span class="hljs-code">  </span><br>child:<br></code></pre></td></tr></table></figure>
+<script>
+    window.addEventListener('message',function(event){
+        console.log(event);
+        top.postMessage("子页面收到消息","http://parent.html")
+        
+    }, false)
+</script>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><code class="hljs elixir">  <br>补充方法：<br>  <br>子页面发消息给父页面：<br><span class="hljs-number">1</span>&gt; 设置一个代理iframe（proxy），嵌入到子页面中，此iframe与主页面**同源**  <br><span class="hljs-number">2</span>&gt; 子页面直接通过**查询字符串**传值给代理iframe`src=a.com/proxy.html?args=xxx`<br><span class="hljs-number">3</span>&gt; 代理iframe接收到传来的值后遵循“同源政策”（直接window.parent或者window.top获取最顶层对象的引用）与主页面通信<br>![](assets/<span class="hljs-number">16419760560054</span>.jpg)<br>  <br>  <br>父页面发消息给子页面：**利用页面跳转时window.name不变来存值**<br><span class="hljs-number">1</span>&gt;子页面先给父页面发送自己的页面的window的引用<br><span class="hljs-number">2</span>&gt;父页面根据收到的引用给父页面的代理发消息<br><span class="hljs-number">3</span>&gt;父页面的代理使用window.name来记录发来的数据<br><span class="hljs-number">4</span>&gt;父页面的然后跳转到子页面的代理页面（a href）<br><span class="hljs-number">5</span>&gt;子页面的代理页面传值获得window.name的值<br><span class="hljs-number">6</span>&gt;子页面的代理将这个值直接传递给子页面<br>  <br>子页面-&gt;父页面-&gt;父页面的代理-&gt;子页面的代理-&gt;子页面<br>  <br>![](assets/<span class="hljs-number">16419760729517</span>.jpg)<br><br><span class="hljs-number">56</span>. 主域相同子域不同的跨域通信（例如example.com和sub.example.com）<br>* 两个文件都加上`document.domain=<span class="hljs-string">&quot;example.com&quot;</span>`<br>* 创建一个iframe，然后控制iframe的window来进行通信 <br>  <br><span class="hljs-number">57</span>. http返回的状态码<br>![](assets/<span class="hljs-number">16419773628168</span>.jpg)<br>![](assets/<span class="hljs-number">16419773746749</span>.jpg)<br>![](assets/<span class="hljs-number">16419773860589</span>.jpg)<br><br><span class="hljs-number">58</span>. 强缓存 &amp; 协商缓存<br><br>缓存分为两种，强缓存和协商缓存，根据响应的header内容来决定。<br><br>|      | 获取资源形式 | 状态码               | 是否发送请求到服务器       |<br>|------|<span class="hljs-symbol">:-------|-------------------|------------------|</span><br>| 强缓存  | 从缓存中取  | <span class="hljs-number">200</span>（from cache）   | 否，直接从缓存中取        |<br>| 协商缓存 | 从缓存中取  | <span class="hljs-number">304</span>（<span class="hljs-keyword">not</span> modified） | 是，通过服务器来告知缓存是否可用 |<br><br>强缓存相应字段：expires, cache-control(如果cache-control和expire同时存在，cache-control优先级高于expires）。  <br>协商缓存相应字段：last-modified，if-modified-since，Etag，If-None-Match。  <br>  <br>*应当在服务器更新资源的时候请求新缓存，没更新时就使用强缓存，以此来减少因网络请求产生的资源浪费。*<br><br><span class="hljs-number">59</span>. http的<span class="hljs-number">304</span>状态码<br><br>如果客户端发送了一个带条件的get请求，并且该请求已经被允许，而文档的内容（自上次访问以来）并没有改变，则服务器应当返回<span class="hljs-number">304</span>状态码（<span class="hljs-keyword">not</span> modified）。<br><br><span class="hljs-number">60</span>. 前端优化<br>* 降低请求量：合并请求，减少http请求数，minify/gzip压缩，webP，懒加载 <br>* 加快请求速度：预解析DNS，减少域名数，并行加载，CDN分发<br>* 缓存：http协议缓存请求，离线数据缓存localStorage<br>* 渲染：js/css优化，加载顺序，服务端渲染，pipeline<br><br><span class="hljs-number">61</span>. GET和POST<br>* GET参数通过URL传递；POST放在request body中<br>* GET请求在url中传递的参数是有长度限制的；而POST没有<br>* GET比POST更不安全，因为参数直接暴露在url中，所以不能用来传递敏感信息<br>* GET请求只能进行url编码；而POST支持多种编码方式<br>* GET的请求参数会被完整保留在历史记录中；而POST中的参数不会被保留<br>* GET和post本质上就是TCP连接，并无差别<br>* GET产生一个TCP数据包（浏览器把http header和data一起发送出去，服务器响应<span class="hljs-number">200</span>）；POST产生两个TCP数据包（浏览器先发送一个header，服务器响应<span class="hljs-number">100</span>（continue）之后浏览器再发送data，之后服务器响应<span class="hljs-number">200</span> OK）<br><br><span class="hljs-number">62</span>. <span class="hljs-number">301</span>状态码和<span class="hljs-number">302</span>状态码的区别<br>* <span class="hljs-number">301</span>状态码（Moved Permanently）表示资源被永久地移动到了新位置，将来对该资源的引用都应使用返回的若干URL之一，**返回的响应可以用来缓存**。<br>* <span class="hljs-number">302</span>状态码（Found）请求的资源是临时从不同的URL返回响应的，所以**不一定可以缓存**。只有在cache-control或expires指定之后，才可以缓存该响应。<br>* <span class="hljs-number">301</span>状态码常用的场景是使用域名跳转，<span class="hljs-number">302</span>状态码常用来做**临时跳转**：例如未登录的用户访问用户中心被重定向至登录页面。<br><br><span class="hljs-number">63</span>. http支持的方法<br>GET，POST，HEAD，OPTIONS，PUT，DELETE<br><br><span class="hljs-number">64</span>. 如何画一个三角形<br>原理：边框的均分原理（一边边框设置为‘red’，其他都为‘transparent’即可）<br></code></pre></td></tr></table></figure>
+<p>div{<br>    width: 0px;<br>    height: 0px;<br>    border-top: 10px solid red; //设置上边界为red<br>    border-right: 10px solid transparent;<br>    border-bottom: 10px solid transparent;<br>    border-left: 10px solid transparent;<br>}</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">65.</span> 状态码200和状态码304<br><span class="hljs-bullet">*</span> 状态码200（Okay）：请求已成功，请求的数据将会全部返回。如果没有显式的gzip压缩，则文件有多大就要有多大的传输量。<br><span class="hljs-bullet">*</span> 状态码304（Not Modified）: 如果客户端发送一个带条件的GET请求，而文档的内容没有发生改变，则服务器返回这个状态码。客户端和服务器之间只需要传递少量的数据即可验证数据是否发生了更新。<br>  <br><span class="hljs-bullet">66.</span> HTML5新增的元素<br><span class="hljs-bullet">*</span> HTML5为了实现更好的web语义化，增加了header，footer，nav，aside，section等语义化标签。<br><span class="hljs-bullet">*</span> 在表单方面，为input增加了color，email，data，range等类型<br><span class="hljs-bullet">*</span> 在存储方面，提供了sessionStorage，localStorage和离线存储（manifest）<br><span class="hljs-bullet">*</span> 在多媒体方面，规定了音频和视频元素audio和vedio，另外还有地理定位，canvas画布拖放，多线程编程的web worker和webSocket协议 <br><br><span class="hljs-bullet">67.</span> 从输入URL到显示页面的详细过程<br>1&gt; 输入URL后，首先要找到域名的服务器的ip。浏览器会先寻找相关缓存查看是否有记录，查找的顺序<br>为：浏览器缓存 -&gt; 系统缓存 -&gt; 路由器缓存。缓存中没有时，查找系统的hosts文件夹中是否有记<br>录，如果没有则查询<span class="hljs-strong">**DNS服务器**</span>（用来建立数字ip与易记URL之间的映射）。  <br>2&gt; 得到服务器的ip地址后，根据其ip和端口号构造一个http请求，该请求被封装在一个TCP包中，依<br>次经过：传输层 -&gt; 网络层 -&gt; 数据链路层 -&gt; 物理层，最终到达服务器。  <br>3&gt; 服务器解析并响应这个请求，返回响应的html报文给浏览器。  <br>4&gt; 返回的html报文为树形结构，浏览器会根据html报文构建DOM树。构建DOM树的过程中，如果遇到<br>JS脚本或外部脚本连接，则会停下来加载或下载脚本（造成阻塞）。所以一般把JS代码放在html代码后<br>边。  <br>5&gt; 建立完DOM树之后，根据内部样式，外部样式以及内联样式构建一个CSS对象模型树，称为CSSOM<br>树。此后CSSOM树会与DOM树合并为<span class="hljs-strong">**渲染树**</span>（会先排除非视觉节点如：script,meta和<br>display:none）。  <br>6&gt; 之后开始渲染页面。遇到图片，音频，视频等资源时，会<span class="hljs-strong">**并行加载**</span>，但是一般浏览器对每个域<br>的并行下载有数量限制，一般是4-6个。  <br>7&gt; 在渲染过程中，还需要关注缓存。缓存一般通过cache-control，last-modified，expire等<br>首部字母控制。Cache-Control与Expire的区别在于：Cache-Control采用相对时间，而Expire则<br>采用服务器端的绝对时间（因此存在时差问题），所以一般采用Cache-Control。<br>8&gt; 在使用缓存时，会首先查看这些缓存是否过期，如果没有过期则直接使用本地缓存（服务器返回304:not modified）；如果已经过期，则直接请求服务器发送最新数据。  <br>![](assets/16419944653407.jpg)<br><br><span class="hljs-bullet">68.</span> 常见的http首部<br>可以将http首部分为通用首部，请求首部，响应首部和实体首部。<br><span class="hljs-bullet">*</span> 通用首部：表示一些通用信息，比如<span class="hljs-strong">**date**</span>表示报文创建的时间<br><span class="hljs-bullet">*</span> 请求首部：是请求报文中独有的，如<span class="hljs-strong">**Cookie**</span>，或者和缓存相关的if-Modified-Since<br><span class="hljs-bullet">*</span> 响应首部：是响应报文中独有的，如<span class="hljs-strong">**set-cookie**</span>，和重定义相关的location<br><span class="hljs-bullet">*</span> 实体首部：用来描述实体部分，如：allow描述可执行的请求，content-type描述主体类型，content-Encoding描述主体的编码方式<br><br><span class="hljs-bullet">69.</span> http2.0的特性<br><span class="hljs-bullet">*</span> <span class="hljs-strong">**内容安全**</span>：<span class="hljs-strong">**http2.0基于https**</span>，天然具有安全特性，通过http2.0的特性可以避免单纯使用https的性能下降。 <br><span class="hljs-bullet">*</span> <span class="hljs-strong">**二进制格式**</span>：http2.0将所有的传输信息分割为更小的帧，并对其进行二进制编码。基于二进制可以让协议有更多的扩展性，例如引入了帧来传输数据和指令。<br><span class="hljs-bullet">*</span> <span class="hljs-strong">**多路复用**</span>：此功能相当于长连接的增强，多个request请求可以随机地混杂在一起，接收方可以根据request的id将request再归属到各自不同的服务端请求里。另外，多路复用也支持了<span class="hljs-strong">**流的优先级**</span>，允许客户端告诉服务器端哪些是<span class="hljs-strong">**优先请求**</span>的资源，确保其可以优先传输。（把很多request合并发送到服务器端，服务器端再根据request的id归属到不同的服务通道）<br><br><span class="hljs-bullet">70.</span> cache-control的值有哪些？<br><br>cache-control是一个通用消息头字段被用于http的请求和响应中，通过指定的指令来实现缓存机<br>制。常见的取值有：<span class="hljs-strong">**private，no-cache，max-age，must-revalidate**</span>等。默认为<br><span class="hljs-strong">**private**</span>。<br><br><span class="hljs-bullet">71.</span> 浏览器生成页面时，会生成什么树？<br><br>会生成DOM树（浏览器遍历html文档节点）和CSSOM规则树（浏览器解析css文件）。<br><br><span class="hljs-bullet">72.</span> 如何查看网站的性能如何？<br><br>检测页面的加载时间，一般有两种方法：<span class="hljs-strong">**被动检测**</span>和<span class="hljs-strong">**主动检测**</span><br><span class="hljs-bullet">*</span> 被动检测：在被检测的页面中植入脚本或探针，当用户访问网页时，探针自动采取数据并返回分析。<br><span class="hljs-bullet">*</span> 主动检测：主动地搭载分布式受控环境，模拟用户发起页面访问请求，主动采取数据并进行分析，利用第三方软件进行检测。<br><br><span class="hljs-bullet">73.</span> 介绍http协议的特征<br><br><span class="hljs-bullet">*</span> http是基于TCP/IP通信协议传输数据<br><span class="hljs-bullet">*</span> http是一个属于<span class="hljs-strong">**应用层**</span>的<span class="hljs-strong">**面向对象**</span>的协议，适用于分布式超媒体系统<br><span class="hljs-bullet">*</span> http协议工作于客户端，服务端架构上<br><br><span class="hljs-bullet">74.</span> cookie有哪些字段可以设置<br><br><span class="hljs-bullet">*</span> name：cookie的名称<br><span class="hljs-bullet">*</span> value：cookie的值<br><span class="hljs-bullet">*</span> domain：可以访问此cookie的域名<br><span class="hljs-bullet">*</span> 要想cookie可以在多个二级域名（one.example.com）中共享，需要将domain设置为顶级域名（example.com）。因为二级域名之间的cookie不能共享。<br><span class="hljs-bullet">*</span> path：可以访问此cookie的页面路径，只有在该路径下的页面才可以访问cookie<br><span class="hljs-bullet">*</span> expire/max-age：cookie的超时时间。不设置的话默认是session，即cookie会和session一起失效，当浏览器关闭（整个浏览器被关闭），此cookie会失效<br><span class="hljs-bullet">*</span> size：表示cookie的大小<br><span class="hljs-bullet">*</span> http：cookie的httponly属性，为true则表示只能通过http请求头来获取cookie信息，而不能通过document.cookie来访问此cookie<br><span class="hljs-bullet">*</span> secure：决定是否只能通过https协议来传递此cookie<br>  <br><span class="hljs-emphasis">*cookie始终在同源的http请求中携带（即使不需要），在服务器和浏览器之间来回穿梭。*</span><br><br><span class="hljs-bullet">75.</span> cookie有哪些编码方式？<br><br>encodeURI（）<br><br><span class="hljs-bullet">76.</span> CSS3新增的元素有哪些？<br><br><span class="hljs-bullet">*</span> 边框：border-redius,box-shadow等<br><span class="hljs-bullet">*</span> CSS3背景如background-size，background-origin等<br><span class="hljs-bullet">*</span> 2D，3D转换如transform等<br><span class="hljs-bullet">*</span> 动画animation等<br><br><span class="hljs-bullet">77.</span> 前端需要注意哪些SEO（搜索引擎优化）<br><span class="hljs-bullet">*</span> 合理的<span class="hljs-code">`title`</span>,<span class="hljs-code">`description`</span>, <span class="hljs-code">`keywords`</span>:搜索对这三项的权重逐个减小。<span class="hljs-code">`title`</span>值强调重点即可，重要的关键词出现不超过两次，不同的页面的title要有所不同。<span class="hljs-code">`description`</span>把页面的内容要高度概括，不同页面的<span class="hljs-code">`description`</span>要不同。<span class="hljs-code">`keywords`</span>列举出重要关键词即可。<br><span class="hljs-bullet">*</span> 语义化（<span class="hljs-strong">**正确的标签包含正确的内容**</span>）的<span class="hljs-code">`HTML`</span>代码。让搜索引擎容易理解网页。<br><span class="hljs-bullet">*</span> 重要内容<span class="hljs-code">`HTML`</span>代码放在最前：搜索引擎抓取<span class="hljs-code">`HTML`</span>的顺序是从上到下，保证重要的HTML内容在头部。<br><span class="hljs-bullet">*</span> 重要内容不要使用JS代码输出，爬虫不会执行JS代码，所以也不会获取JS代码背后的重要内容。<br><span class="hljs-bullet">*</span> 避免使用iframe。爬虫不会抓取iframe中的内容。<br><span class="hljs-bullet">*</span> 非装饰性图片必须加上<span class="hljs-code">`alt`</span>：这样图片挂了爬虫还可以查看图片内容。<br><span class="hljs-bullet">*</span> 提高网站响应速度：网站速度是搜索引擎排序的一个重要指标。<br><br><span class="hljs-bullet">78.</span> <span class="hljs-code">`&lt;img&gt;`</span>的<span class="hljs-code">`title`</span>和<span class="hljs-code">`alt`</span>有什么区别<br><span class="hljs-bullet">*</span> <span class="hljs-code">`title`</span>：通常当鼠标滑动到元素上的时候显示<br><span class="hljs-bullet">*</span> <span class="hljs-code">`alt`</span>：是<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span>&gt;</span></span>的特有属性，是图片内容的等价描述，用于图片无法加载时显示、可提高图片访问性。<span class="hljs-strong">**搜索引擎会重点分析**</span>。 <br><br><span class="hljs-bullet">79.</span> HTTP的几种请求方法用途<br><span class="hljs-bullet">*</span> <span class="hljs-code">`GET`</span>方法 <br><span class="hljs-bullet">  +</span> 发送一个请求来取得服务器上的某一资源<br><span class="hljs-bullet">*</span> <span class="hljs-code">`POST`</span>方法<br><span class="hljs-bullet">  +</span> 向<span class="hljs-code">`URL`</span>指定的资源提交数据或附加新的数据<br><span class="hljs-bullet">*</span> <span class="hljs-code">`PUT`</span>方法<br><span class="hljs-bullet">  +</span> 跟<span class="hljs-code">`POST`</span>方法很像，也是向服务器提交数据，但是<span class="hljs-code">`PUT`</span>指定了资源在服务器上的位置，而<span class="hljs-code">`POST`</span>没有<br><span class="hljs-bullet">*</span> <span class="hljs-code">`HEAD`</span>方法<br><span class="hljs-bullet">  +</span> 只请求页面的首部<br><span class="hljs-bullet">*</span> <span class="hljs-code">`DELETE`</span>方法<br><span class="hljs-bullet">  +</span> 删除服务器上的某资源<br><span class="hljs-bullet">*</span> <span class="hljs-code">`OPTIONS`</span>方法<br><span class="hljs-bullet">  +</span> 它用于获取当前<span class="hljs-code">`URL`</span>所<span class="hljs-strong">**支持的方法**</span>，如果请求成功，会有一个<span class="hljs-code">`Allow`</span>的头包含类似“GET，POST”这样的信息。<br><span class="hljs-bullet">*</span> <span class="hljs-code">`TRACE`</span>方法<br><span class="hljs-bullet">  +</span> <span class="hljs-code">`TRACE`</span>方法用于激发一个远程的，<span class="hljs-strong">**应用层**</span>的请求消息回路<br><span class="hljs-bullet">*</span> <span class="hljs-code">`CONNECT`</span>方法<br><span class="hljs-bullet">  +</span> <span class="hljs-code">`CONNECT`</span>方法把请求连接转换到透明的<span class="hljs-code">`TCP/IP`</span>通道<br>  <br><span class="hljs-bullet">80.</span> 介绍一下对浏览器内核的理解<br>主要分成两部分：<span class="hljs-strong">**渲染引擎**</span>（<span class="hljs-code">`layout engineer`</span> 或 <span class="hljs-code">`Rendering Engine`</span>）和<span class="hljs-strong">**JS引擎</span><br><span class="hljs-strong">**</span>。<br>  <br><span class="hljs-bullet">*</span> 渲染引擎：负责取得网页的内容（<span class="hljs-code">`HTML`</span>、<span class="hljs-code">`XML`</span>、图像等等）、整理讯息（例如加入<span class="hljs-code">`CSS`</span>等），以及计算网页的显示方式，然后会输出至显示器或打印机。浏览器的内核的不同对于网页的语法解释会有不同，所以渲染的效果也不相同。所有网页浏览器、电子邮件客户端以及其他需要编辑、显示网络内容的应用程序都需要内核<br><span class="hljs-bullet">*</span> <span class="hljs-code">`JS`</span>引擎：解析和执行<span class="hljs-code">`javascript`</span>来实现网页的动态效果  <br>  <br><span class="hljs-emphasis">*一开始渲染引擎和JS引擎并没有明显的区分，后来JS引擎越来越独立，内核就倾向于只指<span class="hljs-strong">**渲染引擎**</span>。*</span><br><br><span class="hljs-section">### 常见的浏览器内核有哪些？</span><br><span class="hljs-bullet">*</span> <span class="hljs-code">`Trident`</span>内核：IE，360，搜狗浏览器等。[又称MSHTML]<br><span class="hljs-bullet">*</span> <span class="hljs-code">`Webkit`</span>内核：Safari，Chrome等[chrome的blink是webkit的分支]<br><br><span class="hljs-bullet">81.</span> HTML5的离线储存怎么使用，解释一下工作原理<br><span class="hljs-bullet">*</span> 在用户没有与因特网连接时，可以正常访问站点或应用，在用户与因特网连接时，更新用户机器上的缓存文件。<br><span class="hljs-bullet">*</span> 原理：HTML5的离线存储是基于一个新建的<span class="hljs-code">`.appche`</span>文件的缓存机制（不是存储技术），通过这个文件上的解析清单离线存储资源，这些资源就会像cookie一样被存储下来。之后当网络处于离线状态下时，浏览器会通过被离线存储的数据进行页面展示。<br><span class="hljs-bullet">*</span> 如何使用：<br><span class="hljs-bullet">  +</span> 在页面头部加入一个manifest的属性<br><span class="hljs-bullet">  +</span> 在cache.manifest文件编写离线存储的资源<br><span class="hljs-bullet">  +</span> 在离线状态时，操作window.applicationCache进行需求实现<br><br></code></pre></td></tr></table></figure>
+<pre><code>CACHE MANIFEST
+#v0.11
+CACHE:
+js/app.js
+css/style.css
+NETWORK:
+resource/logo.png
+FALLBACK:
+/offline.html
+</code></pre>
+  <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br></pre></td><td class="code"><pre><code class="hljs markdown">  <br><span class="hljs-bullet">82.</span> var和let的区别<br><span class="hljs-bullet">*</span> 作用域不同<br>var是函数作用域，let是块作用域。在函数中使用var声明了变量，在函数外其实也可以引用。但是在<br>let是块作用域，如果在for循环内使用let声明了变量，那么在for循环外是不能引用此变量的。<br><br><span class="hljs-bullet">*</span> let不能在定义之前访问该变量，但是var可以 <br>let必须先声明再使用。而var先使用后声明也可以，只不过直接使用但没有定义的时候，其值为<br><span class="hljs-code">`undifined`</span>。var有一个变量提升的过程，当整个函数作用域被创建的时候，实际上var定义的变量都会被创建，并且如果此时没有初始化的话，则默认初始化为一个<span class="hljs-code">`undifined`</span>。<br><br><span class="hljs-bullet">*</span> let不能被重新定义，但是var可以<br><br><span class="hljs-bullet">83.</span> 浏览器如何对HTML5的离线储存资源进行管理和加载？（使用manifest）<br><br><span class="hljs-bullet">*</span> 在线的情况下，浏览器发现<span class="hljs-code">`html`</span>的头部有<span class="hljs-code">`manifest`</span>属性，则会请求<span class="hljs-code">`manifest`</span>文件，如果是第一次访问app，那么浏览器会根据manifest的要求下载相应的内容并进行离线缓存。如果已经访问过该app并且相关的资源已经离线存储了，那么浏览器会先使用已经缓存好的资源去加载页面，然后浏览器会对比新的<span class="hljs-code">`manifest`</span>和旧的<span class="hljs-code">`manifest`</span>，如果相同则不做任何操作。如果不同，则重新下载文件要求的资源并进行离线存储。<br><span class="hljs-bullet">*</span> 离线的情况下，浏览器直接使用离线存储好的资源。<br><br><span class="hljs-bullet">84.</span> iframe有哪些缺点？<br><span class="hljs-bullet">*</span> <span class="hljs-code">`iframe`</span>会阻塞主页面的<span class="hljs-code">`Onload`</span>事件<br><span class="hljs-bullet">*</span> 搜索引擎的检索程序无法解读iframe，不利于SEO<br><span class="hljs-bullet">*</span> <span class="hljs-code">`iframe`</span>和主页面共享连接池，而浏览器对相同域的连接有限制，所以会<span class="hljs-strong">**影响页面的并行加载**</span>。<br><span class="hljs-emphasis">*如何绕开以上问题？*</span>  <br>通过javascript动态给iframe添加src属性值，这样可以绕开以上问题。（为什么？）<br>  <br><span class="hljs-bullet">85.</span> WEB标准以及W3C标准是什么？<br><span class="hljs-bullet">*</span> 标签闭合、标签小写、不乱嵌套、使用外链CSS和JS、结构行为表现的分离<br>  <br><span class="hljs-bullet">86.</span> xhtml和html有什么区别？<br><span class="hljs-bullet">*</span> 功能上的差别：<br><span class="hljs-bullet">  +</span> XHTML可以兼容各大浏览器、手机以及平板电脑，并且浏览器也能快速正确地编译网页。<br><span class="hljs-bullet">*</span> 书写习惯上的差别： <br><span class="hljs-bullet">  +</span> XHTML元素必须被<span class="hljs-strong">**正确地嵌套**</span>，<span class="hljs-strong">**闭合**</span>，<span class="hljs-strong">**区分大小写**</span>，文档必须拥有<span class="hljs-strong">**根元素**</span>。<br>  <br><span class="hljs-bullet">87.</span> link和@import的区别<br><span class="hljs-bullet">*</span> link一般放在head标签中，而@import必须放在<span class="hljs-code">`&lt;style type=&quot;text/css&quot;&gt;`</span>标签中<br><span class="hljs-bullet">*</span> link可以<span class="hljs-strong">**通过JS操作DOM**</span>，来改变样式，而@import不可以<br><span class="hljs-bullet">*</span> link标签作为HTML元素，不存在兼容性问题；@import只能在IE6以上才能识别<br><span class="hljs-bullet">*</span> link的权重优先级高于@import<br><span class="hljs-bullet">*</span> link会<span class="hljs-strong">**和DOM结构一同加载渲染**</span>，而@import只能等dom结构加载完成以后才能加载渲染页面（相当于把CSS放到了HTML底部）<br><br><span class="hljs-bullet">88.</span> 行内元素有哪些？块级元素有哪些？空（void）元素有哪些？行内元素和块级元素有什么区别？<br><span class="hljs-bullet">*</span> 行内元素有：<span class="hljs-code">`&lt;a&gt;`</span>、<span class="hljs-code">`&lt;b&gt;`</span>、<span class="hljs-code">`&lt;span&gt;`</span>、<span class="hljs-code">`&lt;img&gt;`</span>、<span class="hljs-code">`&lt;input&gt;`</span>、<span class="hljs-code">`&lt;select&gt;`</span>、<span class="hljs-code">`&lt;strong&gt;`</span>（不能设置宽高，不独占一行）<br><span class="hljs-bullet">*</span> 块级元素有：<span class="hljs-code">`&lt;div&gt;`</span>、<span class="hljs-code">`&lt;ul&gt;`</span>、<span class="hljs-code">`&lt;ol&gt;`</span>、<span class="hljs-code">`&lt;li&gt;`</span>、<span class="hljs-code">`&lt;dl&gt;`</span>、<span class="hljs-code">`&lt;dt&gt;`</span>、<span class="hljs-code">`&lt;dd&gt;`</span>、<span class="hljs-code">`&lt;h1&gt;`</span>、<span class="hljs-code">`&lt;h2&gt;`</span>、<span class="hljs-code">`&lt;h3&gt;`</span>、<span class="hljs-code">`&lt;h4&gt;`</span>、<span class="hljs-code">`&lt;p&gt;`</span>...（可以设置宽高，独占一行）<br><span class="hljs-bullet">*</span> 空元素：<span class="hljs-code">`&lt;br&gt;`</span>、<span class="hljs-code">`&lt;hr&gt;`</span>、<span class="hljs-code">`&lt;img&gt;`</span>、<span class="hljs-code">`&lt;input&gt;`</span>、<span class="hljs-code">`&lt;link&gt;`</span>、<span class="hljs-code">`&lt;meta&gt;`</span><br>  <br><span class="hljs-bullet">89.</span> HTML全局属性（global attribute）有哪些？<br><span class="hljs-bullet">*</span> <span class="hljs-code">`class`</span>：为元素设置类标识<br><span class="hljs-bullet">*</span> <span class="hljs-code">`data-*`</span>：为元素增加自定义属性<br><span class="hljs-bullet">*</span> <span class="hljs-code">`draggable`</span>：设置元素是否可以拖拽<br><span class="hljs-bullet">*</span> <span class="hljs-code">`id`</span>：元素id，文档内唯一<br><span class="hljs-bullet">*</span> <span class="hljs-code">`lang`</span>：元素内容的语言<br><span class="hljs-bullet">*</span> <span class="hljs-code">`style`</span>：行内css样式<br><span class="hljs-bullet">*</span> <span class="hljs-code">`title`</span>：元素相关的建议信息 <br>  <br><span class="hljs-bullet">90.</span> Canvas和SVG有什么区别？<br><span class="hljs-bullet">*</span> <span class="hljs-code">`svg`</span>绘制出来的每一个图形的元素都是<span class="hljs-strong">**独立的DOM节点**</span>，<span class="hljs-strong">**能够方便的绑定事件或用来修改**</span>；<span class="hljs-code">`canvas`</span>输出的是一整幅画布。<br><span class="hljs-bullet">*</span> <span class="hljs-code">`svg`</span>输出的图形是矢量图形，后期可以修改参数来自由地放大或者缩小，不会出现失真和锯齿的情况；而<span class="hljs-code">`canvas`</span>输出标量画布，就像一张图片一样，放大会出现失真和锯齿现象<br>  <br><span class="hljs-bullet">91.</span> HTML5为什么只需要写<span class="hljs-code">`&lt;!DOCTYPE HTML&gt;`</span><br><span class="hljs-bullet">*</span> <span class="hljs-code">`HTML5`</span>不基于SGML，因此不需要对<span class="hljs-code">`DTD`</span>进行引用，但是需要<span class="hljs-code">`doctype`</span>来规范浏览器的行为<br><span class="hljs-bullet">*</span> <span class="hljs-code">`HTML4.01`</span>基于<span class="hljs-code">`SGML`</span>，所以需要对<span class="hljs-code">`DTD`</span>进行引用，才能告知浏览器文档所使用的文档类型<br>  <br><span class="hljs-bullet">92.</span> 如何在页面上实现一个圆形的可点击区域？<br><span class="hljs-bullet">*</span> svg<br><span class="hljs-bullet">*</span> border-redius<br>  <br><span class="hljs-bullet">93.</span> typeof Null = object, typeof undefine = undefine  <br>  <br><span class="hljs-bullet">94.</span> 网页验证码是干嘛用的？是为了解决什么安全问题？ <br><span class="hljs-bullet">*</span> 区分用户是计算机还是人的程序，可以防止<span class="hljs-strong">**恶意破解密码**</span>、<span class="hljs-strong">**刷票**</span>、<span class="hljs-strong">**论坛灌水**</span>等恶意操作。<br><span class="hljs-bullet">*</span> 有效防止黑客对于某一特定注册用户使用特定程序进行不断地登录尝试<br><br><span class="hljs-bullet">95.</span> 渲染优化方法汇总<br><span class="hljs-bullet">*</span> 禁止使用<span class="hljs-code">`iframe`</span>（会阻塞父文档<span class="hljs-code">`onload`</span>事件） <br><span class="hljs-bullet">  +</span> <span class="hljs-code">`iframe`</span>会阻塞主页面的<span class="hljs-code">`Onload`</span>事件<br><span class="hljs-bullet">  +</span> 搜索引擎的检索程序无法解读这种页面，不利于SEO<br><span class="hljs-bullet">  +</span> <span class="hljs-code">`iframe`</span>和主页面共享连接池，而浏览器对相同域的连接有限制，所以会影响页面的并行加载<br><span class="hljs-bullet">  +</span> 如果一定要使用<span class="hljs-code">`iframe`</span>，则应该利用<span class="hljs-code">`javascript`</span>（动态地给<span class="hljs-code">`iframe`</span>添加<span class="hljs-code">`src`</span>属性值，即可解决如上问题）<br><span class="hljs-bullet">*</span> 禁止使用<span class="hljs-code">`gif`</span>（最好使用js+css+html？）图片实现<span class="hljs-code">`loading`</span>效果（降低CPU消耗，提升渲染性能）<br><span class="hljs-bullet">*</span> 使用<span class="hljs-code">`CSS3`</span>代码代替<span class="hljs-code">`JS`</span>动画（尽可能避免重绘重排以及回流（其实就是重排））<br><span class="hljs-bullet">*</span> 对于一些小图标，可以使用base64位编码，以减少网络请求。但不建议大图使用（比较耗费CPU）<br><span class="hljs-bullet">  +</span> 小图标的优势在于：<br><span class="hljs-bullet">    -</span> 减少http请求<br><span class="hljs-bullet">    -</span> 避免文件跨域<br><span class="hljs-bullet">    -</span> 修改可以及时生效<br><span class="hljs-bullet">*</span> 页面头部的<span class="hljs-code">`&lt;style&gt;&lt;/style&gt;`</span> 、<span class="hljs-code">`&lt;script&gt;&lt;/script&gt;`</span>会阻塞页面；（渲染过程中有两个互斥的线程：一条渲染js脚本，一条渲染css脚本）<br><span class="hljs-bullet">*</span> 避免页面中出现空的<span class="hljs-code">`href`</span>和<span class="hljs-code">`src`</span>会阻塞页面其他资源的加载（阻塞下载进程）<br><span class="hljs-bullet">*</span> 使用<span class="hljs-code">`gzip`</span>，<span class="hljs-code">`CDN`</span>托管，<span class="hljs-code">`data`</span>缓存，图片服务器<br><span class="hljs-bullet">*</span> 前端模版 js+数据，减少由于<span class="hljs-code">`html`</span>标签导致的带宽浪费。前端用<span class="hljs-strong">**变量保存ajax请求结果**</span>，每次操作本地变量，不用请求从而减少请求次数<br><span class="hljs-bullet">*</span> 用<span class="hljs-code">`innerHTML`</span>代替<span class="hljs-code">`DOM`</span>操作，<span class="hljs-strong">**减少DOM操作次数**</span>，优化javascript性能<br><span class="hljs-bullet">*</span> 当需要设置很多样式的时候，使用<span class="hljs-code">`className`</span>而不是直接操作<span class="hljs-code">`style`</span><br><span class="hljs-bullet">*</span> 少用全局变量、缓存DOM节点查找的结果、减少IO操作<br><span class="hljs-bullet">*</span> 图片预加载，将<span class="hljs-strong">**样式表放在顶部**</span>，将<span class="hljs-strong">**脚本放在底部**</span>加上时间戳<br><span class="hljs-bullet">*</span> 统一思路即：尽量向前端优化、减少数据库操作、减少磁盘IO<br><br><span class="hljs-bullet">96.</span> 小知识积累<br><span class="hljs-bullet">*</span> onfocus获得焦点，onblur失去焦点<br><span class="hljs-bullet">*</span> flash和js通过ExternalInterface实现交互<br><span class="hljs-bullet">*</span> alt和title同时设置的时候，alt作为图片的<span class="hljs-strong">**替代文字**</span>出现（图片加载不出来的时候显示alt），title是图片的解释文字<br><span class="hljs-bullet">*</span> DOCTYPE不存在或格式不正确会导致文档以<span class="hljs-strong">**混杂**</span>模式呈现<br><span class="hljs-bullet">*</span> js中数据类型：<br><span class="hljs-bullet">  +</span> 数值<br><span class="hljs-bullet">  +</span> 字符串<br><span class="hljs-bullet">  +</span> 布尔值<br><span class="hljs-bullet">  +</span> undefined<br><span class="hljs-bullet">  +</span> null<br><span class="hljs-bullet">  +</span> symbol<br><span class="hljs-bullet">*</span> js是单线程，同一时间只能做一件事。HTML5引入webWorker之后允许创建多个线程<br><span class="hljs-bullet">*</span> js中的<span class="hljs-strong">**回调函数**</span>被视作是<span class="hljs-strong">**异步任务**</span>，常见的异步任务还有：<br><span class="hljs-bullet">  +</span> 普通事件，如click，resize等<br><span class="hljs-bullet">  +</span> 资源加载，如load，error等<br><span class="hljs-bullet">  +</span> 定时器，包括setInterval，setTimeout等<br><span class="hljs-bullet">*</span> 同步任务会被放到主线程的<span class="hljs-strong">**执行栈**</span>里，异步任务被放在<span class="hljs-strong">**任务队列**</span>（消息队列）里<br><span class="hljs-bullet">*</span> js中的执行机制：（先执行执行栈里的同步任务，然后将消息队列里的异步任务拿到执行栈执行）<br><span class="hljs-bullet">  +</span> 先执行<span class="hljs-strong">**执行栈里的同步任务**</span><br><span class="hljs-bullet">  +</span> 异步任务（回调函数）被放在任务队列（消息队列）里<br><span class="hljs-bullet">  +</span> 等到执行栈中的同步任务全部执行结束之后，系统就会按顺序地读取任务队列（消息队列）中的异步任务，于是被读取的异步任务结束等待状态，进入执行栈，开始执行<br><span class="hljs-bullet">  +</span> 好处：执行时间长的异步回调任务被放在了消息队列中，这样就可以先执行所需时间短的同步任务，提高效率，避免拥塞。<br><span class="hljs-bullet">  +</span> 即使同步任务全部执行完毕，还是会去消息队列中查看是否有新的异步任务需要执行，如果有的话就将其带到执行栈中执行。这个操作会不停地持续，这就叫做“事件循环：event loop”<br>   ![](assets/16454377249495.jpg)<br><span class="hljs-bullet">*</span> 闭包<br><span class="hljs-bullet">  +</span> 闭包就是能读取其他函数<span class="hljs-strong">**内部变量**</span>的函数<br><span class="hljs-bullet">  +</span> 闭包是指有权访问另一个函数作用域中变量的函数，创建闭包的最常见的方式就是在一个函数中再创建另外一个函数，通过另外一个函数访问这个函数的局部变量，从而<span class="hljs-strong">**突破作用链域**</span><br><span class="hljs-bullet">  +</span> 闭包的特性：<br><span class="hljs-bullet">    -</span> 函数内再嵌套函数<br><span class="hljs-bullet">    -</span> 内部函数可以引用外层的参数和变量<br><span class="hljs-bullet">    -</span> 外部函数的参数和变量不会被垃圾回收机制回收<br><span class="hljs-bullet">  +</span> 说说你对闭包的理解<br><span class="hljs-bullet">    -</span> 使用闭包主要是为了设计<span class="hljs-strong">**私有的方法和变量**</span>。优点是可以<span class="hljs-strong">**避免全局变量的污染**</span>，缺点是闭包会<span class="hljs-strong">**常驻内存**</span>，<span class="hljs-strong">**增大内存使用量**</span>，使用不当<span class="hljs-strong">**容易造成内存泄露**</span>。<br><span class="hljs-bullet">    -</span> 闭包最大的好处：1.可以读取函数内部的变量 2.可以使这些变量始终保存在内存中（可以实现较好的封装和缓存）<br><span class="hljs-bullet">  +</span> 使用闭包需要注意的点：<br><span class="hljs-bullet">    -</span> 不能滥用闭包，不然会造成网页的性能问题<br><span class="hljs-bullet">    -</span> 解决方法是：在退出函数之前，删除所有不再需要使用的变量<br><span class="hljs-bullet">*</span> 原型链<br><span class="hljs-bullet">  +</span> js中每个对象都会初始化一个属性，叫做<span class="hljs-strong">**prototype**</span>。<br><span class="hljs-bullet">  +</span> 当访问这个对象的某个属性的时候，如果这个对象身上没有，则会去他的prototype上去查找，如果他的prototype身上也没有，就会去prototype的prototype身上去找。<br><span class="hljs-bullet">  +</span> 特点：<br><span class="hljs-bullet">    -</span> 修改原型时，与之相关的对象也会继承这一改变<br><span class="hljs-bullet">*</span> 防抖函数和节流函数<br><span class="hljs-bullet">  +</span> 防抖函数（debounce）<br><span class="hljs-bullet">    -</span> 原理：在事件被触发的n秒之后再执行回调，如果在这n秒内又被重新触发，则又重新计时<br><span class="hljs-bullet">    -</span> 本质：防抖的本质是多次执行变成最后一次执行；节流的本质是多次执行变成了每次执行间隔一段时间<br><span class="hljs-bullet">    -</span> 代码实现：<br></code></pre></td></tr></table></figure>
+<pre><code>    const debounce = (func, wait = 50) =&gt;&#123;
+        
+        let timer = 0；//缓存一个定时器id
+        
+        return function()&#123;
+            let args = arguments
+            if(timer)&#123;
+                clearTimeout(timer)
+                //如果有定时器的话，就清空定时器，然后重新开始计时
+            &#125;
+            //如果没有定时器，就直接新加一个定时器
+            timer = setTimeout(()=&gt;&#123;
+                //之前的this是指向window的
+                //把传进来的函数基于当前这个定时器执行(定时器时间到了才执行)
+                func.apply(this,args)
+            &#125;,wait)
+        &#125;
+        
+    &#125;
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs markdown"><span class="hljs-bullet">  -</span> 应用：<span class="hljs-strong">**仿百度搜索：**</span> 设置一个定时器，用户在定时器之内只要输入内容，就重置定时器。如果用户在定时器时间内不输入任何内容，则百度自动搜索。<span class="hljs-strong">**按钮提交场景:**</span> 防止多次提交按钮，只执行最后提交的那一次<br><span class="hljs-bullet">+</span> 节流函数(throttle)<br><span class="hljs-bullet">  -</span> 原理：规定在一个单位时间内，只能触发一次函数，如果这个单位时间内触发多次函数，那么将只有一次函数生效<br><span class="hljs-bullet">  -</span> 代码实现：<br></code></pre></td></tr></table></figure>
+    const throttle = (func, wait = 50 ) =&gt; &#123;
+        let lastTime = 0;
+        return function()&#123;
+            let now = new Date();
+            let args = [...arguments]
+            if(now - lastTime &gt; wait)&#123;             //将当前时间和上一次执行函数的时间对比，如果差值大于等待时间就执行函数
+                lastTime = now;
+                func.apply(this, args)   
+            &#125;
+        &#125;
+    &#125;
+    
+    setInterval(
+        throttle(()=&gt;&#123;
+            console.log(1)
+        &#125;,500)
+    )
+```
+- 应用：1.拖拽场景：固定时间内只执行一次，防止超高频次触发位置变动 2.缩放场景：监控浏览器resize 3.动画场景：避免段时间内多次触发动画引起性能问题
+</code></pre>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">
+                  
+                    本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                  
+                </p>
+              
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2022/02/15/Promise%E4%B8%93%E9%A1%B9/">
+                        <span class="hidden-mobile">Promise专项</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+  </div>
+  
+
+  
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.0/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.0/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    (function () {
+      var path = "/local-search.xml";
+      $('#local-search-input').on('click', function() {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      });
+      $('#modalSearch').on('shown.bs.modal', function() {
+        $('#local-search-input').focus();
+      });
+    })()
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+
+</body>
+</html>
